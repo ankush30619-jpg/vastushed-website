@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Mission | VASTUSHED Architecture, Construction & Vastu</title>
+  <meta name="description" content="Discover VASTUSHED's mission: To create spaces that work on every level. Uplifting liveability for families and institutions across North India." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070a0d',
+              surface: '#0d1318',
+              card: '#131c23',
+              gold: '#e5b95c',
+              copper: '#c8633a',
+              sandstone: '#e2d9cc',
+              cyan: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#070a0d] text-slate-100 selection:bg-[#e5b95c] selection:text-black architectural-grid min-h-screen relative">
+
+  <!-- =========================================================================
+       NAVIGATION BAR (ACTIVE: OUR MISSION)
+       ========================================================================= -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-white/10 bg-[#070a0d]/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 brand-logo-frame flex items-center justify-center p-0.5 group-hover:border-[#e5b95c] transition-all">
+          <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Official Logo" class="brand-logo-img rounded-lg group-hover:scale-105 transition-transform" />
+        </div>
+        <div>
+          <span class="text-2xl font-black font-cinzel tracking-wider text-white flex items-center gap-1.5">
+            VASTUSHED
+          </span>
+          <span class="block text-[10px] font-mono tracking-widest text-[#e5b95c] uppercase">Design • Build • Align</span>
+        </div>
+      </a>
+
+      <!-- 7 Dedicated Pages Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-mono tracking-wider uppercase text-slate-300">
+        <a href="index.html" class="nav-link hover:text-[#e5b95c]">Home</a>
+        <a href="about.html" class="nav-link hover:text-[#e5b95c]">About Us</a>
+        <a href="architecture.html" class="nav-link hover:text-[#e5b95c]">Architecture & Interiors</a>
+        <a href="construction.html" class="nav-link hover:text-[#e5b95c]">Construction</a>
+        <a href="vastu.html" class="nav-link hover:text-[#e5b95c]">Vastu Consultancy</a>
+        <a href="mission.html" class="nav-link active">Our Mission</a>
+        <a href="contact.html" class="nav-link hover:text-[#e5b95c]">Contact Us</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contact.html" class="btn-chamfer px-5 py-2.5 bg-gradient-to-r from-[#e5b95c] to-[#c8633a] text-black font-semibold text-xs tracking-wider uppercase hover:opacity-95 transition-opacity flex items-center gap-2">
+          <i data-lucide="compass" class="w-4 h-4 text-black"></i>
+          <span>Consult With Us</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#070a0d]/98 border-b border-white/10 px-6 py-6 space-y-4 text-sm font-mono uppercase">
+      <a href="index.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Home</a>
+      <a href="about.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">About Us</a>
+      <a href="architecture.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Architecture & Interiors</a>
+      <a href="construction.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Construction</a>
+      <a href="vastu.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Vastu Consultancy</a>
+      <a href="mission.html" class="block text-[#e5b95c] font-bold py-1">Our Mission</a>
+      <a href="contact.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Contact Us</a>
+      <div class="pt-4 border-t border-white/10">
+        <a href="contact.html" class="block w-full text-center py-3 bg-[#e5b95c] text-black font-bold uppercase text-xs">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28 pb-20">
+    <!-- PAGE HERO HEADER -->
+    <section class="py-16 relative border-b border-white/10 bg-gradient-to-b from-[#0c1217] to-[#070a0d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10 text-[#e5b95c] text-xs font-mono tracking-widest uppercase mb-4">
+          PAGE 06 // OUR MISSION
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black font-cinzel text-white max-w-4xl leading-tight">
+          To Create Spaces That <br />
+          <span class="gradient-gold">Work on Every Level</span>
+        </h1>
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl font-light mt-4 leading-relaxed">
+          The modern built environment often focuses only on appearance and construction speed. At VASTUSHED, we go deeper.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 01: THE 9x9 LIVING MATRIX SIMULATOR (MICRO-TO-MACRO ENGINE)
+         ========================================================================= -->
+    <section id="living-matrix-section" class="py-16 relative border-b border-white/10 bg-gradient-to-b from-[#070a0d] via-[#0b1219] to-[#070a0d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>THE 9x9 LIVING MATRIX ENGINE // 9-SCALE COSMIC ZOOM</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white leading-tight">
+            The Conscious Built Environment <br />
+            <span class="gradient-gold">From Master Bedroom to Cosmic Planets</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed">
+            <em>"Yatha Pinde Tatha Brahmande"</em> — As is the human cell, so is the planetary cosmos. Our mission is to make spaces alive and working at their full energetic potential so individuals, families, towns, factories, and nations function in absolute harmonic resonance.
+          </p>
+        </div>
+
+        <!-- 9 Quick Scale Selector Pills -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2 active" data-scale="0">
+            <span class="w-2 h-2 rounded-full bg-[#e5b95c]"></span>
+            <span>01 // Room</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="1">
+            <span class="w-2 h-2 rounded-full bg-[#38bdf8]"></span>
+            <span>02 // House</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="2">
+            <span class="w-2 h-2 rounded-full bg-[#34d399]"></span>
+            <span>03 // Neighbourhood</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="3">
+            <span class="w-2 h-2 rounded-full bg-[#38bdf8]"></span>
+            <span>04 // Sector</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="4">
+            <span class="w-2 h-2 rounded-full bg-[#e5b95c]"></span>
+            <span>05 // Patna City</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="5">
+            <span class="w-2 h-2 rounded-full bg-[#c8633a]"></span>
+            <span>06 // Bihar State</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="6">
+            <span class="w-2 h-2 rounded-full bg-[#e5b95c]"></span>
+            <span>07 // India Nation</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="7">
+            <span class="w-2 h-2 rounded-full bg-[#38bdf8]"></span>
+            <span>08 // Earth Globe</span>
+          </button>
+          <button class="mission-scale-pill px-3.5 py-2 rounded-lg text-xs font-mono tracking-wider border border-white/10 bg-white/5 text-slate-300 flex items-center gap-2" data-scale="8">
+            <span class="w-2 h-2 rounded-full bg-[#fef08a]"></span>
+            <span>09 // Planets & Stars</span>
+          </button>
+        </div>
+
+        <!-- Main Living Matrix Simulator Viewport & Narrative Card -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+          
+          <!-- Left Column: Canvas Viewport (7 Cols) -->
+          <div class="lg:col-span-7 space-y-4">
+            
+            <!-- Canvas Container -->
+            <div class="mission-matrix-canvas-container relative cad-corner">
+              
+              <!-- Top Viewport Control Bar -->
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between z-20 pointer-events-auto">
+                <div class="flex items-center gap-2">
+                  <span id="mission-scale-step-badge" class="px-2.5 py-1 rounded bg-black/70 border border-[#e5b95c]/50 text-[#e5b95c] font-mono text-[11px] font-bold">
+                    SCALE 01 / 09
+                  </span>
+                  <button id="mission-play-btn" class="px-3 py-1 rounded bg-white/10 hover:bg-[#e5b95c] hover:text-black border border-white/20 text-white font-mono text-[11px] flex items-center gap-1.5 transition-all">
+                    <i data-lucide="play" class="w-3 h-3"></i>
+                    <span>Auto Tour</span>
+                  </button>
+                </div>
+
+                <!-- Zoom In & Out Buttons -->
+                <div class="flex items-center gap-1.5 bg-black/70 p-1 rounded-lg border border-white/15">
+                  <button id="mission-zoom-in-btn" class="p-1.5 hover:bg-white/20 text-white rounded transition-colors" title="Zoom In towards Room">
+                    <i data-lucide="zoom-in" class="w-4 h-4 text-[#e5b95c]"></i>
+                  </button>
+                  <button id="mission-zoom-out-btn" class="p-1.5 hover:bg-white/20 text-white rounded transition-colors" title="Zoom Out towards Cosmos">
+                    <i data-lucide="zoom-out" class="w-4 h-4 text-[#38bdf8]"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Canvas Element -->
+              <canvas id="mission-matrix-canvas" class="w-full block"></canvas>
+
+              <!-- Layer Toggles on Canvas Bottom-Right -->
+              <div class="absolute bottom-3 right-3 flex flex-wrap gap-1.5 z-20 pointer-events-auto">
+                <button class="mission-layer-toggle active px-2 py-1 rounded bg-black/70 hover:bg-black border border-[#e5b95c]/40 text-[10px] font-mono text-[#e5b95c] flex items-center gap-1" data-layer="grid">
+                  <span class="check-indicator text-emerald-400">✓</span>
+                  <span>9x9 Grid</span>
+                </button>
+                <button class="mission-layer-toggle active px-2 py-1 rounded bg-black/70 hover:bg-black border border-[#38bdf8]/40 text-[10px] font-mono text-[#38bdf8] flex items-center gap-1" data-layer="vectors">
+                  <span class="check-indicator text-emerald-400">✓</span>
+                  <span>Prana Vectors</span>
+                </button>
+                <button class="mission-layer-toggle active px-2 py-1 rounded bg-black/70 hover:bg-black border border-[#34d399]/40 text-[10px] font-mono text-[#34d399] flex items-center gap-1" data-layer="activity">
+                  <span class="check-indicator text-emerald-400">✓</span>
+                  <span>Life Activity</span>
+                </button>
+                <button class="mission-layer-toggle active px-2 py-1 rounded bg-black/70 hover:bg-black border border-[#fef08a]/40 text-[10px] font-mono text-[#fef08a] flex items-center gap-1" data-layer="cosmicRays">
+                  <span class="check-indicator text-emerald-400">✓</span>
+                  <span>Cosmic Rays</span>
+                </button>
+              </div>
+
+              <!-- Interactive Reticle Hint -->
+              <div class="absolute bottom-3 left-3 text-[10px] font-mono text-slate-400 bg-black/60 px-2 py-1 rounded border border-white/10 pointer-events-none hidden sm:block">
+                <span>[HOVER TO INSPECT PADA // CLICK FOR HARMONIC RIPPLE]</span>
+              </div>
+            </div>
+
+            <!-- Real-time Telemetry HUD Box -->
+            <div id="mission-hud-box" class="mission-hud-box p-4 rounded-xl border border-[#e5b95c]/30 grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div>
+                <div class="text-[10px] font-mono text-[#e5b95c] uppercase">ACTIVE SCALE</div>
+                <div id="hud-scale-name" class="text-xs sm:text-sm font-bold font-mono text-white truncate">01 // Room • Master Bedroom</div>
+              </div>
+              <div>
+                <div class="text-[10px] font-mono text-[#38bdf8] uppercase">SCALE RATIO & SPAN</div>
+                <div class="text-xs sm:text-sm font-bold font-mono text-white flex items-center gap-2">
+                  <span id="hud-scale-ratio">1 : 10</span>
+                  <span class="text-slate-500">•</span>
+                  <span id="hud-scale-metric" class="text-[#38bdf8]">5m × 5m</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-[10px] font-mono text-emerald-400 uppercase">HARMONIC FREQUENCY</div>
+                <div id="hud-frequency" class="text-xs sm:text-sm font-bold font-mono text-white truncate">7.83 Hz (Schumann Delta)</div>
+              </div>
+              <div class="col-span-2 sm:col-span-2">
+                <div class="text-[10px] font-mono text-[#c8633a] uppercase">VASTU PURUSHA RESONANCE</div>
+                <div id="hud-vastu-zone" class="text-xs font-mono text-slate-200 truncate">Nairutya (South-West) • Earth Element Anchor</div>
+              </div>
+              <div class="col-span-2 sm:col-span-1">
+                <div class="text-[10px] font-mono text-[#fef08a] uppercase">CONSCIOUS AGENT</div>
+                <div id="hud-entity" class="text-xs font-mono text-slate-200 truncate">Breathing Occupant & Bio-Aura</div>
+              </div>
+            </div>
+
+            <!-- 9-Step Continuous Range Slider -->
+            <div class="glass-panel p-5 rounded-xl space-y-3">
+              <div class="flex items-center justify-between text-xs font-mono text-slate-300">
+                <span class="text-[#e5b95c] flex items-center gap-1">
+                  <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i>
+                  <span>[1] ROOM (MICRO)</span>
+                </span>
+                <span class="text-slate-400 text-[11px] hidden sm:inline">← SLIDE TO ZOOM IN / ZOOM OUT →</span>
+                <span class="text-[#38bdf8] flex items-center gap-1">
+                  <span>[9] COSMIC PLANETS (MACRO)</span>
+                  <i data-lucide="zoom-out" class="w-3.5 h-3.5"></i>
+                </span>
+              </div>
+
+              <input 
+                type="range" 
+                id="mission-scale-slider" 
+                min="0" 
+                max="8" 
+                value="0" 
+                step="1" 
+                class="mission-range-slider"
+                aria-label="Cosmic Scale Hierarchy Slider"
+              />
+
+              <!-- Slider Tick Labels -->
+              <div class="grid grid-cols-9 text-[8px] sm:text-[9px] font-mono text-slate-400 text-center pt-1">
+                <span>Room</span>
+                <span>House</span>
+                <span class="text-[#34d399] font-medium">Neighbourhood</span>
+                <span>Sector</span>
+                <span>Patna</span>
+                <span>Bihar</span>
+                <span>India</span>
+                <span>Earth</span>
+                <span>Cosmos</span>
+              </div>
+
+              <p class="text-[11px] text-slate-400 font-light leading-relaxed pt-1">
+                <strong class="text-white font-medium">Zoom Mechanics:</strong> Sliding towards the right scales outward into larger urban and cosmic envelopes. Sliding towards the left zooms directly into personal sleep ergonomics. The invariant 9x9 Vastu Purusha matrix governs each hierarchical dimension.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Dynamic Scale Narrative Card (5 Cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div id="mission-scale-card" class="glass-panel p-6 sm:p-8 rounded-2xl border border-[#e5b95c]/30 cad-corner space-y-5 relative overflow-hidden">
+              
+              <!-- Subtle Background Watermark -->
+              <div class="absolute -right-8 -bottom-8 w-40 h-40 opacity-5 pointer-events-none">
+                <img src="assets/images/vastushed-logo.jpg" alt="Watermark" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Top Metadata Badges -->
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-4">
+                <span id="mission-card-category" class="px-2.5 py-1 rounded bg-[#e5b95c]/10 text-[#e5b95c] font-mono text-[11px] uppercase tracking-wider font-bold">
+                  Micro Personal Space
+                </span>
+                <div class="flex items-center gap-2 font-mono text-xs text-slate-400">
+                  <span id="mission-card-ratio" class="text-white font-bold">1 : 10</span>
+                  <span>•</span>
+                  <span id="mission-card-metric" class="text-[#38bdf8]">5m × 5m</span>
+                </div>
+              </div>
+
+              <!-- Card Header -->
+              <div>
+                <h3 id="mission-card-title" class="text-2xl sm:text-3xl font-black font-cinzel text-white">
+                  Master Bedroom
+                </h3>
+                <h4 id="mission-card-headline" class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider mt-1">
+                  The Sanctuary of Human Cellular Regeneration
+                </h4>
+              </div>
+
+              <!-- Description -->
+              <p id="mission-card-desc" class="text-sm text-slate-300 font-light leading-relaxed">
+                The fundamental building block of human consciousness. The king bed is oriented with head towards the South to align the human circulatory system with Earth's geomagnetic flux. Soft circadian dawn light enters from the North-East window, while thick masonry on the South-West prevents thermal and psychic turbulence, allowing deep restorative sleep.
+              </p>
+
+              <!-- Celestial Entanglement Box -->
+              <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1.5">
+                <div class="text-[10px] font-mono text-[#fef08a] uppercase flex items-center gap-1.5">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                  <span>COSMIC ENTANGLEMENT & CELESTIAL ALIGNMENT</span>
+                </div>
+                <div id="mission-card-celestial" class="text-xs font-mono text-slate-200">
+                  Prithvi / Rahu (Grounding & Restful Stability)
+                </div>
+              </div>
+
+              <!-- Key Architectural & Biological Impacts -->
+              <div class="space-y-2.5">
+                <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider font-bold">
+                  ARCHITECTURAL & CONSCIOUSNESS DELIVERABLES:
+                </div>
+                <ul id="mission-card-benefits" class="space-y-2">
+                  <li class="flex items-start gap-2.5 text-xs text-slate-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#e5b95c] mt-1.5 flex-shrink-0"></span>
+                    <span>Optimized Melatonin production via 45° circadian morning light ingress</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs text-slate-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#e5b95c] mt-1.5 flex-shrink-0"></span>
+                    <span>Bio-electromagnetic grounding preventing chronic sleep fragmentation</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs text-slate-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#e5b95c] mt-1.5 flex-shrink-0"></span>
+                    <span>Acoustic isolation zone under 28 dB for accelerated nervous system repair</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pt-2 border-t border-white/10">
+                <a href="contact.html" class="w-full btn-chamfer py-3 bg-gradient-to-r from-[#e5b95c] to-[#c8633a] text-black font-bold font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <span>Align Your Space With VASTUSHED</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 02: THE MICRO-TO-MACRO LIVING ARCHITECTURE PHILOSOPHY
+         ========================================================================= -->
+    <section class="py-20 relative border-b border-white/10 bg-[#070a0d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/30 text-[#38bdf8] text-xs font-mono tracking-widest uppercase">
+            <span>CONSCIOUS BUILT ENVIRONMENT MANIFESTO</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white leading-tight">
+            Why Buildings Are Alive <br />
+            <span class="gradient-gold">And Entangled With The Cosmos</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base font-light leading-relaxed">
+            Conventional architecture designs inert physical containers. VASTUSHED designs conscious, living interfaces. Three non-negotiable principles govern every square foot we craft:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="glass-panel p-8 rounded-2xl border-t-4 border-t-[#e5b95c] cad-corner space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e5b95c]/10 text-[#e5b95c] flex items-center justify-center">
+              <i data-lucide="maximize-2" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">1. Fractal Scale Invariance</h3>
+            <p class="text-xs font-mono text-[#e5b95c]">THE INVARIANT 9x9 VASTU MANDALA</p>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              The exact mathematical ratios that govern deep REM sleep in a 5m master bedroom are identical to the geometric energy lines organizing a 150m neighbourhood, a 10km metropolis, and the Navagraha planetary orbits. When a bedroom is aligned, it resonates in phase with the universe.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="glass-panel p-8 rounded-2xl border-t-4 border-t-[#38bdf8] cad-corner space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#38bdf8]/10 text-[#38bdf8] flex items-center justify-center">
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">2. Active Living Metabolism</h3>
+            <p class="text-xs font-mono text-[#38bdf8]">SPACES INHALE, EXHALE & RADIATE</p>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              A well-built structure breathes like a biological organism. The central Brahmasthana courtyard acts as the respiratory lungs, drawing fresh oxygen and discharging stale thermal air. Natural daylight vectors align human circadian cortisol cycles, reducing anxiety and chronic exhaustion.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="glass-panel p-8 rounded-2xl border-t-4 border-t-[#c8633a] cad-corner space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#c8633a]/10 text-[#c8633a] flex items-center justify-center">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">3. Universal Harmonic Equilibrium</h3>
+            <p class="text-xs font-mono text-[#c8633a]">FROM INDIVIDUAL TO CIVILIZATION</p>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              When an individual sleeps in harmonic alignment, their nervous system recovers. In turn, family decisions become grounded, workplace teams innovate without toxic friction, and cities develop resilience. Living architecture is the foundation for an enlightened civilizational footprint.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 03: SCALABLE HARMONIC IMPACTS MATRIX
+         ========================================================================= -->
+    <section class="py-20 relative border-b border-white/10 bg-gradient-to-b from-[#070a0d] to-[#0d1318]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+          <div class="space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-400/10 border border-emerald-400/30 text-emerald-400 text-xs font-mono tracking-widest uppercase">
+              <span>HOLISTIC CIVILIZATIONAL MATRIX</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black font-cinzel text-white">
+              Who Benefits When Spaces Work <br />
+              <span class="gradient-gold">At Full Energetic Potential</span>
+            </h2>
+          </div>
+          <p class="text-slate-400 text-xs sm:text-sm font-light max-w-md">
+            Harmonized design is not a luxury aesthetic—it is a preventative biological and societal asset touching every scale of human existence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="glass-panel p-6 rounded-xl border-l-4 border-l-[#e5b95c] space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#e5b95c] font-bold">SCALE 01 // MICRO</span>
+              <i data-lucide="user" class="w-5 h-5 text-[#e5b95c]"></i>
+            </div>
+            <h4 class="text-lg font-bold font-tech text-white">Individuals & Personal Self</h4>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+              Deep restorative Delta/Theta REM sleep cycles, normalized circadian melatonin cycles, 0-EMF shielding around the bed, and sustained mental focus without midday exhaustion.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl border-l-4 border-l-[#38bdf8] space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#38bdf8] font-bold">SCALE 02 // UNIT</span>
+              <i data-lucide="home" class="w-5 h-5 text-[#38bdf8]"></i>
+            </div>
+            <h4 class="text-lg font-bold font-tech text-white">Families & Domestic Sanctum</h4>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+              Intergenerational harmony, quiet acoustic sanctuaries for elders, buoyant social spaces for youth, culinary fire safety in Agneya (SE), and long-term financial preservation.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl border-l-4 border-l-[#34d399] space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#34d399] font-bold">SCALE 03 & 04 // CLUSTER</span>
+              <i data-lucide="users" class="w-5 h-5 text-[#34d399]"></i>
+            </div>
+            <h4 class="text-lg font-bold font-tech text-white">Neighbourhoods & Urban Sectors</h4>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+              Pedestrian-first streets safe for children, zero through-traffic noise, 100% on-site rainwater recharge ponds, and shaded bio-canopies lowering local urban heat by 2.8°C.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl border-l-4 border-l-[#c8633a] space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#c8633a] font-bold">SCALE 05 // METRO</span>
+              <i data-lucide="building-2" class="w-5 h-5 text-[#c8633a]"></i>
+            </div>
+            <h4 class="text-lg font-bold font-tech text-white">Offices, Factories & Institutions</h4>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+              South-West directional anchoring for executive governance, North-East creative daylight bays for R&D teams, and high-efficiency circulation preventing operational bottlenecks.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl border-l-4 border-l-[#fef08a] space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#fef08a] font-bold">SCALE 06 & 07 // REGION</span>
+              <i data-lucide="map" class="w-5 h-5 text-[#fef08a]"></i>
+            </div>
+            <h4 class="text-lg font-bold font-tech text-white">Patna, Bihar & North India</h4>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+              Reverent North-East Ganges riverfront integration, high-speed Delhi-Patna transit integration, resilient regional flood buffers, and equitable distributed solar clean energy.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl border-l-4 border-l-purple-400 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-purple-400 font-bold">SCALE 08 & 09 // PLANET</span>
+              <i data-lucide="sun" class="w-5 h-5 text-purple-400"></i>
+            </div>
+            <h4 class="text-lg font-bold font-tech text-white">Earth Biosphere & Cosmic Order</h4>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+              Harmonization with Earth’s geomagnetic dipole shield, conscious solar energy capture, reduced carbon extraction, and sacred alignment with Navagraha celestial harmonics.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 04: INTERACTIVE LIVING SPACE DIAGNOSTIC SIMULATOR
+         ========================================================================= -->
+    <section class="py-20 relative border-b border-white/10 bg-[#070a0d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+            <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
+            <span>INTERACTIVE SPACE DIAGNOSTIC</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white leading-tight">
+            Diagnose Your Spatial Typology <br />
+            <span class="gradient-gold">And Unlock Its Full Potential</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base font-light leading-relaxed">
+            Select your space category below to simulate its optimal directional zoning, active living vectors, and cosmic harmonic resonance.
+          </p>
+        </div>
+
+        <!-- Typology Selector Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+          <button class="diag-type-btn px-5 py-2.5 rounded-xl border border-[#e5b95c] bg-[#e5b95c]/20 text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-gold" data-type="bedroom">
+            01 // Master Bedroom Suite
+          </button>
+          <button class="diag-type-btn px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-slate-300 font-mono text-xs uppercase tracking-wider font-bold transition-all" data-type="villa">
+            02 // Private Villa / Home
+          </button>
+          <button class="diag-type-btn px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-slate-300 font-mono text-xs uppercase tracking-wider font-bold transition-all" data-type="colony">
+            03 // Living Neighbourhood
+          </button>
+          <button class="diag-type-btn px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-slate-300 font-mono text-xs uppercase tracking-wider font-bold transition-all" data-type="corporate">
+            04 // Corporate HQ / Campus
+          </button>
+          <button class="diag-type-btn px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-slate-300 font-mono text-xs uppercase tracking-wider font-bold transition-all" data-type="urban">
+            05 // Smart City District
+          </button>
+        </div>
+
+        <!-- Diagnostic Dynamic Result Panel -->
+        <div id="diag-result-card" class="glass-panel p-8 sm:p-10 rounded-2xl border border-[#e5b95c]/30 cad-corner max-w-5xl mx-auto space-y-8">
+          <!-- Dynamic Content rendered by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4 MISSION PILLARS IN DETAIL -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div class="glass-panel p-8 rounded-2xl border-l-4 border-l-[#e5b95c] cad-corner space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#e5b95c] font-bold">PILLAR 01</span>
+              <div class="w-10 h-10 rounded-lg bg-[#e5b95c]/10 text-[#e5b95c] flex items-center justify-center">
+                <i data-lucide="pen-tool" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h2 class="text-2xl font-bold font-tech text-white">Design Spaces That Are Functional, Aesthetic, & Future-Ready</h2>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              We reject fleeting design fads that look good on social media but fail in daily life. Our architecture balances thermal climate realities, durable natural stone and timber, ergonomic flow, and spatial adaptability for growing families and evolving institutions.
+            </p>
+          </div>
+
+          <div class="glass-panel p-8 rounded-2xl border-l-4 border-l-[#c8633a] cad-corner space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#c8633a] font-bold">PILLAR 02</span>
+              <div class="w-10 h-10 rounded-lg bg-[#c8633a]/10 text-[#c8633a] flex items-center justify-center">
+                <i data-lucide="shield" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h2 class="text-2xl font-bold font-tech text-white">Execute Projects With Clarity, Quality, & Accountability</h2>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              Execution is where visions succeed or crumble. We maintain rigorous on-site supervision, laboratory cube tests for concrete, rebar cover inspections, and clear transparent milestone billings. We stand by our work long after keys are handed over.
+            </p>
+          </div>
+
+          <div class="glass-panel p-8 rounded-2xl border-l-4 border-l-[#38bdf8] cad-corner space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-[#38bdf8] font-bold">PILLAR 03</span>
+              <div class="w-10 h-10 rounded-lg bg-[#38bdf8]/10 text-[#38bdf8] flex items-center justify-center">
+                <i data-lucide="compass" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h2 class="text-2xl font-bold font-tech text-white">Apply Vastu Principles Practically, Without Superstition</h2>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              We treat Vastu as an empirical science of solar orientation, geomagnetic flux, and bio-climatic sanctuary. We remove unnecessary fear and ritualistic excess, focusing on natural light, unobstructed airflow, and restorative directional zoning.
+            </p>
+          </div>
+
+          <div class="glass-panel p-8 rounded-2xl border-l-4 border-l-emerald-400 cad-corner space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-emerald-400 font-bold">PILLAR 04</span>
+              <div class="w-10 h-10 rounded-lg bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="heart" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h2 class="text-2xl font-bold font-tech text-white">Create Environments That Support Comfort, Growth, & Balance</h2>
+            <p class="text-sm text-slate-300 font-light leading-relaxed">
+              A well-aligned building uplifts the emotional state of its occupants. By harmonizing acoustic privacy, sunlight access, and natural greenery, our spaces reduce chronic stress and foster sustained prosperity and happiness.
+            </p>
+          </div>
+        </div>
+
+        <!-- STATS BANNER -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-[#e5b95c]">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-[#e5b95c] stat-counter" data-target="10" data-suffix="+">0+</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Years Experience</div>
+          </div>
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-[#38bdf8]">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-[#38bdf8] stat-counter" data-target="150" data-suffix="+">0+</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Harmonized Projects</div>
+          </div>
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-[#c8633a]">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-[#c8633a] stat-counter" data-target="2.5" data-suffix="M+" data-decimals="1">0M+</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Sq. Ft. Built</div>
+          </div>
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-emerald-400">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-emerald-400 stat-counter" data-target="100" data-suffix="%">0%</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Fear-Free Vastu</div>
+          </div>
+        </div>
+
+        <!-- THE COMBINED SYNTHESIS MANIFESTO -->
+        <div class="glass-panel p-8 sm:p-12 rounded-2xl cad-corner border border-[#e5b95c]/30 text-center relative overflow-hidden mb-16">
+          <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+            <div class="w-16 h-16 mx-auto rounded-full overflow-hidden border-2 border-[#e5b95c] shadow-xl shadow-[#e5b95c]/30">
+              <img src="assets/images/vastushed-logo.jpg" alt="Vastu Purusha Mandala" class="w-full h-full object-cover animate-spin-slow" />
+            </div>
+            <h3 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+              "We Uplift Liveability for Families & Institutions"
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+              We combine professional architectural practice, on-ground construction expertise, and Vastu intelligence—so decisions are made correctly, from the very beginning. Working from 10 years now across Patna, Delhi, and North India.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-6 text-xs font-mono text-[#e5b95c]">
+              <span>10 Years of Craft</span>
+              <span>•</span>
+              <span>150+ Structures Delivered</span>
+              <span>•</span>
+              <span>Patna • Delhi • North India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="contact.html" class="btn-chamfer inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#e5b95c] to-[#c8633a] text-black font-bold font-tech text-sm uppercase tracking-wider">
+            <span>Collaborate With VASTUSHED</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#040608] py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 brand-logo-frame flex items-center justify-center p-0.5">
+              <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Logo" class="brand-logo-img rounded-md" />
+            </div>
+            <span class="text-xl font-black font-cinzel tracking-wider text-white">VASTUSHED</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Architecture, Interior Design, Construction, and Vastu Consultancy delivering thoughtful, well-executed, and energetically aligned spaces across North India. 10 years of craft.
+          </p>
+          <div class="text-[11px] font-mono text-[#e5b95c]">DESIGN. BUILD. ALIGN.</div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">7 Dedicated Pages</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition-colors">1. Homepage</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">2. About Us</a></li>
+            <li><a href="architecture.html" class="hover:text-white transition-colors">3. Architecture & Interiors</a></li>
+            <li><a href="construction.html" class="hover:text-white transition-colors">4. Construction & Build</a></li>
+            <li><a href="vastu.html" class="hover:text-white transition-colors">5. Vastu Consultancy</a></li>
+            <li><a href="mission.html" class="text-white font-semibold">6. Our Mission</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">7. Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider">Typologies</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li>Residential Homes & Villas</li>
+            <li>Commercial & Corporate HQs</li>
+            <li>Hospitality Resorts & Banquets</li>
+            <li>Cafes & Restaurants</li>
+            <li>Urban Design & Plotting</li>
+            <li>Biophilic Landscaping</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#c8633a] uppercase tracking-wider">Coordinates</div>
+          <div class="text-xs font-mono space-y-2 text-slate-400">
+            <div><strong>PATNA HUB:</strong> LAT 25°36'N // LONG 85°08'E</div>
+            <div><strong>DELHI HUB:</strong> LAT 28°36'N // LONG 77°12'E</div>
+            <div class="text-[10px] text-slate-500 pt-2">North India Project Coverage: Bihar, Delhi NCR, UP, Haryana & Regional Belt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+        <div>© 2026 VASTUSHED. All rights reserved. Built with awareness.</div>
+        <div class="flex items-center gap-6">
+          <span>Well Designed. Well Built. Well Aligned.</span>
+          <a href="mission.html" class="text-[#e5b95c] hover:underline flex items-center gap-1">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/mission-matrix.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ai-mascot.js"></script>
+</body>
+</html>

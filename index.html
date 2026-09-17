@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VASTUSHED | Architecture, Construction & Practical Vastu Consultancy</title>
+  <meta name="description" content="VASTUSHED is a premier Architecture, Interior Design, Construction, and Vastu Consultancy firm delivering thoughtful, well-executed, and energetically aligned spaces across North India (Patna & Delhi)." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070a0d',
+              surface: '#0d1318',
+              card: '#131c23',
+              gold: '#e5b95c',
+              copper: '#c8633a',
+              sandstone: '#e2d9cc',
+              cyan: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#070a0d] text-slate-100 selection:bg-[#e5b95c] selection:text-black architectural-grid min-h-screen relative">
+
+  <!-- =========================================================================
+       NAVIGATION BAR (ACTIVE: HOME)
+       ========================================================================= -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-white/10 bg-[#070a0d]/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Official Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 brand-logo-frame flex items-center justify-center p-0.5 group-hover:border-[#e5b95c] transition-all">
+          <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Official Logo" class="brand-logo-img rounded-lg group-hover:scale-105 transition-transform" />
+        </div>
+        <div>
+          <span class="text-2xl font-black font-cinzel tracking-wider text-white flex items-center gap-1.5">
+            VASTUSHED
+          </span>
+          <span class="block text-[10px] font-mono tracking-widest text-[#e5b95c] uppercase">Design • Build • Align</span>
+        </div>
+      </a>
+
+      <!-- 7 Dedicated Pages Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-mono tracking-wider uppercase text-slate-300">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link hover:text-[#e5b95c]">About Us</a>
+        <a href="architecture.html" class="nav-link hover:text-[#e5b95c]">Architecture & Interiors</a>
+        <a href="construction.html" class="nav-link hover:text-[#e5b95c]">Construction</a>
+        <a href="vastu.html" class="nav-link hover:text-[#e5b95c]">Vastu Consultancy</a>
+        <a href="mission.html" class="nav-link hover:text-[#e5b95c]">Our Mission</a>
+        <a href="contact.html" class="nav-link hover:text-[#e5b95c]">Contact Us</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contact.html" class="btn-chamfer px-5 py-2.5 bg-gradient-to-r from-[#e5b95c] to-[#c8633a] text-black font-semibold text-xs tracking-wider uppercase hover:opacity-95 transition-opacity flex items-center gap-2">
+          <i data-lucide="compass" class="w-4 h-4 text-black"></i>
+          <span>Consult With Us</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#070a0d]/98 border-b border-white/10 px-6 py-6 space-y-4 text-sm font-mono uppercase">
+      <a href="index.html" class="block text-[#e5b95c] font-bold py-1">Home</a>
+      <a href="about.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">About Us</a>
+      <a href="architecture.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Architecture & Interiors</a>
+      <a href="construction.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Construction</a>
+      <a href="vastu.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Vastu Consultancy</a>
+      <a href="mission.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Our Mission</a>
+      <a href="contact.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Contact Us</a>
+      <div class="pt-4 border-t border-white/10">
+        <a href="contact.html" class="block w-full text-center py-3 bg-[#e5b95c] text-black font-bold uppercase text-xs">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-20 overflow-hidden">
+      <!-- Interactive Sacred Geometry Canvas Background -->
+      <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-auto z-0"></canvas>
+
+      <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-[#e5b95c]/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-1/4 right-1/10 w-96 h-96 bg-[#38bdf8]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/5 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+              <span class="w-2 h-2 rounded-full bg-[#e5b95c] animate-ping"></span>
+              <span>PATNA • DELHI • NORTH INDIA // 10 YEARS OF CRAFT</span>
+            </div>
+
+            <div class="space-y-2">
+              <div class="text-xs font-mono tracking-[0.25em] text-[#94a3b8] uppercase">
+                VASTUSHED Intro | Hero Section
+              </div>
+              <h1 class="text-5xl sm:text-6xl md:text-7xl font-black font-cinzel tracking-tight leading-[1.08] text-white">
+                DESIGN. <br />
+                <span class="gradient-gold">BUILD.</span> <br />
+                <span class="gradient-cyan">ALIGN.</span>
+              </h1>
+            </div>
+
+            <p class="text-base sm:text-lg text-slate-300 max-w-xl font-light leading-relaxed">
+              <strong class="text-white font-medium">VASTUSHED</strong> is an Architecture, Interior Design, Construction, and Vastu Consultancy firm delivering thoughtful, well-executed, and energetically aligned spaces. Operating primarily across North India, with a strong presence in Patna and Delhi.
+            </p>
+
+            <!-- 3 Core Pillars -->
+            <div class="grid grid-cols-3 gap-3 max-w-lg pt-2">
+              <a href="architecture.html" class="glass-panel p-3 text-center rounded border-l-2 border-[#e5b95c] hover:scale-105 transition-transform block">
+                <span class="block text-[11px] font-mono text-slate-400">Pillar 01</span>
+                <span class="text-sm font-bold text-white font-tech">Well Designed &rarr;</span>
+              </a>
+              <a href="construction.html" class="glass-panel p-3 text-center rounded border-l-2 border-[#c8633a] hover:scale-105 transition-transform block">
+                <span class="block text-[11px] font-mono text-slate-400">Pillar 02</span>
+                <span class="text-sm font-bold text-white font-tech">Well Built &rarr;</span>
+              </a>
+              <a href="vastu.html" class="glass-panel p-3 text-center rounded border-l-2 border-[#38bdf8] hover:scale-105 transition-transform block">
+                <span class="block text-[11px] font-mono text-slate-400">Pillar 03</span>
+                <span class="text-sm font-bold text-white font-tech">Well Aligned &rarr;</span>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a href="architecture.html" class="btn-chamfer px-8 py-4 bg-gradient-to-r from-[#e5b95c] via-[#f59e0b] to-[#c8633a] text-black font-bold font-tech text-sm uppercase tracking-wider flex items-center gap-2">
+                <span>Explore Architectural Works</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a href="vastu.html" class="btn-chamfer px-7 py-4 bg-white/5 hover:bg-white/10 text-white border border-[#e5b95c]/40 font-tech text-sm uppercase tracking-wider flex items-center gap-2">
+                <i data-lucide="compass" class="w-4 h-4 text-[#e5b95c]"></i>
+                <span>Explore Vastu Compass</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Hero Visual with Official Logo Aura -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="glass-panel cad-corner p-6 rounded-2xl relative overflow-hidden border border-[#e5b95c]/30 shadow-2xl">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-6 h-6 rounded-md overflow-hidden border border-[#e5b95c]/50">
+                    <img src="assets/images/vastushed-logo.jpg" alt="Logo" class="w-full h-full object-cover" />
+                  </div>
+                  <span class="text-xs font-mono text-slate-300">STUDIOS // PATNA & DELHI NCR</span>
+                </div>
+                <span class="text-xs font-mono text-[#e5b95c]">EST. 2016</span>
+              </div>
+
+              <!-- Interactive Hero Multi-Project Slider -->
+              <div id="hero-slider-box" class="hero-slider-container relative h-72 rounded-xl overflow-hidden border border-white/10 mb-4 group shadow-xl">
+                
+                <!-- Slide 1: Villa -->
+                <div class="hero-project-slide active w-full h-full cursor-pointer" onclick="window.location.href='architecture.html'">
+                  <img 
+                    src="assets/images/project-villa.jpg" 
+                    alt="The Mandala Sanctum Villa - VASTUSHED" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-black/20 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-[#e5b95c] border border-[#e5b95c]/30">
+                    RESIDENTIAL // PATNA
+                  </div>
+                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                    <span class="bg-black/80 backdrop-blur-md px-3 py-1.5 rounded text-white font-bold border border-white/10">The Mandala Sanctum Villa</span>
+                    <span class="text-[#e5b95c] font-semibold flex items-center gap-1">Explore &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Resort -->
+                <div class="hero-project-slide w-full h-full cursor-pointer" onclick="window.location.href='architecture.html'">
+                  <img 
+                    src="assets/images/project-resort.jpg" 
+                    alt="Aura Horizon Boutique Resort - VASTUSHED" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-black/20 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-[#38bdf8] border border-[#38bdf8]/30">
+                    HOSPITALITY // RAJGIR
+                  </div>
+                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                    <span class="bg-black/80 backdrop-blur-md px-3 py-1.5 rounded text-white font-bold border border-white/10">Aura Horizon Boutique Resort</span>
+                    <span class="text-[#38bdf8] font-semibold flex items-center gap-1">Explore &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Slide 3: Office HQ -->
+                <div class="hero-project-slide w-full h-full cursor-pointer" onclick="window.location.href='architecture.html'">
+                  <img 
+                    src="assets/images/project-office.jpg" 
+                    alt="Sovereign Nexus Corporate HQ - VASTUSHED" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-black/20 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-[#c8633a] border border-[#c8633a]/30">
+                    COMMERCIAL // DELHI NCR
+                  </div>
+                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                    <span class="bg-black/80 backdrop-blur-md px-3 py-1.5 rounded text-white font-bold border border-white/10">Sovereign Nexus Corporate HQ</span>
+                    <span class="text-[#c8633a] font-semibold flex items-center gap-1">Explore &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Slide 4: Cafe -->
+                <div class="hero-project-slide w-full h-full cursor-pointer" onclick="window.location.href='architecture.html'">
+                  <img 
+                    src="assets/images/project-cafe.jpg" 
+                    alt="Terra Veda Botanical Cafe - VASTUSHED" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-black/20 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-amber-400 border border-amber-400/30">
+                    CAFE & LOUNGE // PATNA
+                  </div>
+                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                    <span class="bg-black/80 backdrop-blur-md px-3 py-1.5 rounded text-white font-bold border border-white/10">Terra Veda Botanical Cafe</span>
+                    <span class="text-amber-400 font-semibold flex items-center gap-1">Explore &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Slide 5: Banquet -->
+                <div class="hero-project-slide w-full h-full cursor-pointer" onclick="window.location.href='architecture.html'">
+                  <img 
+                    src="assets/images/project-banquet.jpg" 
+                    alt="Prana Grand Banquet Pavilion - VASTUSHED" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-black/20 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono text-emerald-400 border border-emerald-400/30">
+                    BANQUET // GREATER NOIDA
+                  </div>
+                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                    <span class="bg-black/80 backdrop-blur-md px-3 py-1.5 rounded text-white font-bold border border-white/10">Prana Grand Banquet Pavilion</span>
+                    <span class="text-emerald-400 font-semibold flex items-center gap-1">Explore &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Slider Navigation Arrow Controls -->
+                <button type="button" id="hero-slider-prev" onclick="navigateHeroSlide(-1, event)" class="slider-arrow-btn prev cursor-pointer" aria-label="Previous Project" title="Previous Project">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button type="button" id="hero-slider-next" onclick="navigateHeroSlide(1, event)" class="slider-arrow-btn next cursor-pointer" aria-label="Next Project" title="Next Project">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slider Indicators & Counter Badge -->
+                <div class="absolute top-3 right-3 flex items-center gap-2 z-20 pointer-events-none">
+                  <div id="hero-slider-counter" class="bg-black/80 backdrop-blur-md px-2.5 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10">
+                    01 / 05
+                  </div>
+                </div>
+
+                <!-- Slider Dots -->
+                <div class="slider-dots">
+                  <span onclick="goToHeroSlide(0, event)" class="slider-dot hero-slider-dot active cursor-pointer" title="Slide 1"></span>
+                  <span onclick="goToHeroSlide(1, event)" class="slider-dot hero-slider-dot cursor-pointer" title="Slide 2"></span>
+                  <span onclick="goToHeroSlide(2, event)" class="slider-dot hero-slider-dot cursor-pointer" title="Slide 3"></span>
+                  <span onclick="goToHeroSlide(3, event)" class="slider-dot hero-slider-dot cursor-pointer" title="Slide 4"></span>
+                  <span onclick="goToHeroSlide(4, event)" class="slider-dot hero-slider-dot cursor-pointer" title="Slide 5"></span>
+                </div>
+              </div>
+
+              <!-- Micro Stats Matrix -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
+                <div class="p-2.5 rounded bg-white/5 border border-white/5">
+                  <div class="text-xl font-bold font-tech text-[#e5b95c]">10+</div>
+                  <div class="text-[10px] text-slate-400 uppercase">Years Craft</div>
+                </div>
+                <div class="p-2.5 rounded bg-white/5 border border-white/5">
+                  <div class="text-xl font-bold font-tech text-[#38bdf8]">150+</div>
+                  <div class="text-[10px] text-slate-400 uppercase">Projects</div>
+                </div>
+                <div class="p-2.5 rounded bg-white/5 border border-white/5">
+                  <div class="text-xl font-bold font-tech text-[#c8633a]">1-Roof</div>
+                  <div class="text-[10px] text-slate-400 uppercase">Design-Build</div>
+                </div>
+                <div class="p-2.5 rounded bg-white/5 border border-white/5">
+                  <div class="text-xl font-bold font-tech text-emerald-400">100%</div>
+                  <div class="text-[10px] text-slate-400 uppercase">Practical Vastu</div>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/5 flex items-center gap-2 text-xs text-slate-400 font-mono">
+                <i data-lucide="sparkles" class="w-4 h-4 text-[#e5b95c] shrink-0"></i>
+                <span>"Good design reduces future problems. Correct execution protects investment."</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: "BY THE NUMBERS" (ANIMATED COUNTER SECTION)
+         ========================================================================= -->
+    <section class="py-20 bg-[#0c1217] border-t border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+            Proven Track Record
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+            VASTUSHED By The Numbers
+          </h2>
+          <p class="text-slate-400 text-sm font-light">
+            A decade of precision architecture, turnkey construction, and balanced spaces across North India.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- Metric 1 -->
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-[#e5b95c]">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-[#e5b95c] stat-counter" data-target="10" data-suffix="+">0+</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Years of Craft</div>
+            <p class="text-[10px] text-slate-400 mt-2">Continuous on-ground design & execution since 2016.</p>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-[#38bdf8]">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-[#38bdf8] stat-counter" data-target="150" data-suffix="+">0+</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Projects Delivered</div>
+            <p class="text-[10px] text-slate-400 mt-2">Villas, banquets, resorts, cafes & commercial offices.</p>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-[#c8633a]">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-[#c8633a] stat-counter" data-target="2.5" data-suffix="M+" data-decimals="1">0M+</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Sq. Ft. Crafted</div>
+            <p class="text-[10px] text-slate-400 mt-2">Built-up architectural & landscape footprint.</p>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-emerald-400">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-emerald-400 stat-counter" data-target="100" data-suffix="%">0%</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Practical Vastu</div>
+            <p class="text-[10px] text-slate-400 mt-2">Zero fear-based superstition or unnecessary breakage.</p>
+          </div>
+
+          <!-- Metric 5 -->
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-amber-400">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-amber-400 stat-counter" data-target="98.6" data-suffix="%" data-decimals="1">0%</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">On-Time Delivery</div>
+            <p class="text-[10px] text-slate-400 mt-2">Rigorous milestone-based construction planning.</p>
+          </div>
+
+          <!-- Metric 6 -->
+          <div class="glass-panel stat-box p-6 rounded-xl text-center cad-corner border-t-2 border-t-purple-400">
+            <div class="text-3xl sm:text-4xl font-black font-tech text-purple-400 stat-counter" data-target="2" data-suffix=" Hubs">0</div>
+            <div class="text-xs font-mono text-slate-300 uppercase mt-1">Patna & Delhi</div>
+            <p class="text-[10px] text-slate-400 mt-2">Serving Bihar, Delhi NCR, UP & North India.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CORE SERVICES OVERVIEW
+         ========================================================================= -->
+    <section class="py-20 bg-[#070a0d] border-t border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+            Integrated Expertise
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+            Our 3 Core Disciplines
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base font-light">
+            Architecture, construction, and Vastu synthesized into one seamless, transparent workflow.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="glass-panel p-8 rounded-2xl cad-corner border border-white/10 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-[#38bdf8]/10 text-[#38bdf8] flex items-center justify-center">
+                <i data-lucide="pen-tool" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold font-tech text-white group-hover:text-[#38bdf8] transition-colors">
+                Architecture & Interior Design
+              </h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                End-to-end design for residential villas, commercial offices, hospitality resorts, banquets, cafes, urban plotting, and biophilic landscaping.
+              </p>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Site analysis & solar/wind mapping</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#38bdf8]"></i> 3D visualizations & working drawings</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Functional & future-ready planning</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10">
+              <a href="architecture.html" class="text-xs font-mono text-[#38bdf8] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                Explore Architecture Page &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-panel p-8 rounded-2xl cad-corner border border-white/10 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-[#c8633a]/10 text-[#c8633a] flex items-center justify-center">
+                <i data-lucide="hammer" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold font-tech text-white group-hover:text-[#c8633a] transition-colors">
+                Construction & Execution
+              </h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Operating as a turnkey contractor and builder. We build what we design with strict quality control, reliable timelines, and zero dilution of intent.
+              </p>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#c8633a]"></i> Residential construction & RCC cores</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#c8633a]"></i> High-end interior execution & joinery</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#c8633a]"></i> Renovation & redevelopment</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10">
+              <a href="construction.html" class="text-xs font-mono text-[#c8633a] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                Explore Construction Page &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-panel p-8 rounded-2xl cad-corner border border-white/10 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-[#e5b95c]/10 text-[#e5b95c] flex items-center justify-center">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold font-tech text-white group-hover:text-[#e5b95c] transition-colors">
+                Vastu Consultancy
+              </h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Practical, responsible, and scientific Vastu intelligence. Directional balance, solar harmonics, and non-destructive corrections without superstition.
+              </p>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Home & apartment Vastu analysis</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Commercial & office optimization</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Interactive 8-Direction Mandala tool</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10">
+              <a href="vastu.html" class="text-xs font-mono text-[#e5b95c] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                Explore Vastu Page &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FEATURED WORKS PREVIEW
+         ========================================================================= -->
+    <section class="py-20 bg-[#0c1217] border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">Portfolio Preview</span>
+            <h2 class="text-3xl sm:text-4xl font-black font-cinzel text-white">Featured Projects</h2>
+          </div>
+          <a href="architecture.html" class="text-xs font-mono text-[#e5b95c] hover:underline flex items-center gap-1 font-bold">
+            View All Projects in Architecture Gallery &rarr;
+          </a>
+        </div>
+
+        <div id="featured-projects-preview" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Featured Project 1 -->
+          <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(1)">
+            <div class="relative h-60 overflow-hidden bg-slate-900 card-slider-wrap">
+              <img data-project-img="1" src="assets/images/project-villa.jpg" alt="The Mandala Sanctum Villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+
+              <!-- Multi-Image Slider Arrows -->
+              <button class="slider-arrow-btn prev" onclick="navigateProjectCard(1, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button class="slider-arrow-btn next" onclick="navigateProjectCard(1, 1, event)" aria-label="Next Photo" title="Next Photo">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+
+              <!-- Slide Dots Indicator -->
+              <div class="slider-dots" data-project-dots="1">
+                <span class="slider-dot active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+              </div>
+
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                <span class="tech-tag">Residential</span>
+              </div>
+              <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="1">
+                1 / 3
+              </div>
+              <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                7,400 sq.ft
+              </div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-1.5">
+                <span>Bailey Road, Patna</span>
+                <span class="text-[#e5b95c]">RESIDENTIAL</span>
+              </div>
+              <h3 class="text-lg font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">
+                The Mandala Sanctum Villa
+              </h3>
+              <p class="text-xs text-[#94a3b8] line-clamp-2 font-light">
+                A monolithic residence synthesizing ancient Vedic spatial proportions with exposed board-marked concrete and natural Kota stone.
+              </p>
+            </div>
+          </div>
+
+          <!-- Featured Project 2 -->
+          <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(2)">
+            <div class="relative h-60 overflow-hidden bg-slate-900 card-slider-wrap">
+              <img data-project-img="2" src="assets/images/project-resort.jpg" alt="Aura Horizon Boutique Resort" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+
+              <!-- Multi-Image Slider Arrows -->
+              <button class="slider-arrow-btn prev" onclick="navigateProjectCard(2, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button class="slider-arrow-btn next" onclick="navigateProjectCard(2, 1, event)" aria-label="Next Photo" title="Next Photo">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+
+              <!-- Slide Dots Indicator -->
+              <div class="slider-dots" data-project-dots="2">
+                <span class="slider-dot active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+              </div>
+
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                <span class="tech-tag">Hospitality</span>
+              </div>
+              <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="2">
+                1 / 3
+              </div>
+              <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                42,000 sq.ft
+              </div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-1.5">
+                <span>Rajgir / Bodh Gaya</span>
+                <span class="text-[#e5b95c]">HOSPITALITY</span>
+              </div>
+              <h3 class="text-lg font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">
+                Aura Horizon Boutique Resort
+              </h3>
+              <p class="text-xs text-[#94a3b8] line-clamp-2 font-light">
+                Eco-conscious luxury retreat featuring 32 villas, banquet lawns, and an Ayurvedic wellness pavilion harmonized with cosmic sun paths.
+              </p>
+            </div>
+          </div>
+
+          <!-- Featured Project 3 -->
+          <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(3)">
+            <div class="relative h-60 overflow-hidden bg-slate-900 card-slider-wrap">
+              <img data-project-img="3" src="assets/images/project-office.jpg" alt="Sovereign Nexus Corporate HQ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+
+              <!-- Multi-Image Slider Arrows -->
+              <button class="slider-arrow-btn prev" onclick="navigateProjectCard(3, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button class="slider-arrow-btn next" onclick="navigateProjectCard(3, 1, event)" aria-label="Next Photo" title="Next Photo">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+
+              <!-- Slide Dots Indicator -->
+              <div class="slider-dots" data-project-dots="3">
+                <span class="slider-dot active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+              </div>
+
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                <span class="tech-tag">Commercial</span>
+              </div>
+              <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="3">
+                1 / 3
+              </div>
+              <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                18,500 sq.ft
+              </div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-1.5">
+                <span>Aerocity, Delhi NCR</span>
+                <span class="text-[#e5b95c]">COMMERCIAL</span>
+              </div>
+              <h3 class="text-lg font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">
+                Sovereign Nexus Corporate HQ
+              </h3>
+              <p class="text-xs text-[#94a3b8] line-clamp-2 font-light">
+                A biophilic high-tech corporate office featuring smart acoustic wooden baffles, dynamic circadian lighting, and non-destructive Vastu alignment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         POPULAR SERVICE PACKAGES SNAPSHOT
+         ========================================================================= -->
+    <section class="py-20 bg-[#070a0d] border-t border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+            Tailored Engagement
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+            Curated Service Packages
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base font-light">
+            Clear deliverables and transparent workflows across our 3 core disciplines. Explore all 9 packages across our specialized service pages.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Architecture Highlight -->
+          <div class="package-card featured p-8 rounded-2xl cad-corner flex flex-col justify-between">
+            <div class="package-badge">POPULAR ARCHITECTURE</div>
+            <div class="space-y-4">
+              <span class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider font-bold">DISCIPLINE 01 // ARCHITECTURE</span>
+              <h3 class="text-2xl font-bold font-tech text-white">Comprehensive 3D & Working Sets</h3>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                4K Exterior Elevations, 3D Interior Visualizations, full structural GFC sheets, MEP layouts, and audited BOQ.
+              </p>
+              <ul class="text-xs font-mono text-slate-200 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> 4K Photorealistic Renders & Views</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Complete GFC Architectural Blueprints</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Turnaround: 3-5 Weeks</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+              <a href="architecture.html" class="text-xs font-mono text-[#38bdf8] font-bold hover:underline">
+                View All 3 Arch Packages &rarr;
+              </a>
+              <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Comprehensive%20Architecture%20Package" target="_blank" class="px-4 py-2 rounded bg-white/10 text-white hover:bg-white/20 text-xs font-mono">
+                Inquire
+              </a>
+            </div>
+          </div>
+
+          <!-- Construction Highlight -->
+          <div class="package-card featured p-8 rounded-2xl cad-corner flex flex-col justify-between">
+            <div class="package-badge">POPULAR BUILD</div>
+            <div class="space-y-4">
+              <span class="text-xs font-mono text-[#c8633a] uppercase tracking-wider font-bold">DISCIPLINE 02 // CONSTRUCTION</span>
+              <h3 class="text-2xl font-bold font-tech text-white">Premium Turnkey Build</h3>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Complete groundbreaking to key handover: seismic Fe-550D rebar, M25/M30 concrete, concealed MEP, Italian/vitrified floors, and designer finishes.
+              </p>
+              <ul class="text-xs font-mono text-slate-200 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> 100% Move-In Ready Construction</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Dedicated Site Engineer & Video Audits</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> 10-Year Structural Warranty</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+              <a href="construction.html" class="text-xs font-mono text-[#c8633a] font-bold hover:underline">
+                View All 3 Build Packages &rarr;
+              </a>
+              <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Premium%20Turnkey%20Build%20Package" target="_blank" class="px-4 py-2 rounded bg-white/10 text-white hover:bg-white/20 text-xs font-mono">
+                Inquire
+              </a>
+            </div>
+          </div>
+
+          <!-- Vastu Highlight -->
+          <div class="package-card featured p-8 rounded-2xl cad-corner flex flex-col justify-between">
+            <div class="package-badge">POPULAR VASTU</div>
+            <div class="space-y-4">
+              <span class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider font-bold">DISCIPLINE 03 // VASTU</span>
+              <h3 class="text-2xl font-bold font-tech text-white">On-Site Vastu Diagnostic</h3>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Physical on-site energy inspection across Patna and Delhi NCR. Precise cardinal azimuth readings, geopathic stress screening, and non-destructive cures.
+              </p>
+              <ul class="text-xs font-mono text-slate-200 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Senior Consultant Site Walk-through</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Zero Demolition / Non-Destructive</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Full Color Diagnostic Dossier</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+              <a href="vastu.html" class="text-xs font-mono text-[#e5b95c] font-bold hover:underline">
+                View All 3 Vastu Packages &rarr;
+              </a>
+              <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20On-Site%20Vastu%20Diagnostic%20Package" target="_blank" class="px-4 py-2 rounded bg-white/10 text-white hover:bg-white/20 text-xs font-mono">
+                Inquire
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: "WHAT OUR CLIENTS SAY" (TESTIMONIALS)
+         ========================================================================= -->
+    <section class="py-20 bg-[#070a0d] border-t border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/30 text-[#38bdf8] text-xs font-mono tracking-widest uppercase">
+            Client Voices
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+            What Our Clients Say
+          </h2>
+          <p class="text-slate-400 text-sm font-light">
+            Hear from homeowners, resort developers, cafe owners, and corporate leaders who trust VASTUSHED.
+          </p>
+        </div>
+
+        <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: "PRACTICAL VASTU TIPS" (INTERACTIVE HUB)
+         ========================================================================= -->
+    <section class="py-20 bg-[#0c1217] border-t border-white/10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase mb-2">
+              Everyday Wisdom
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black font-cinzel text-white">
+              Practical Vastu Tips
+            </h2>
+          </div>
+          <a href="vastu.html" class="text-xs font-mono text-[#e5b95c] hover:underline flex items-center gap-1 font-bold">
+            Explore 8-Direction Interactive Mandala &rarr;
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="vastu-tips-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         LIVEABILITY MANIFESTO BANNER
+         ========================================================================= -->
+    <section class="py-20 bg-[#070a0d] border-t border-white/10 text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div class="w-16 h-16 mx-auto rounded-full overflow-hidden border-2 border-[#e5b95c] shadow-xl shadow-[#e5b95c]/20">
+          <img src="assets/images/vastushed-logo.jpg" alt="Vastu Purusha Mandala" class="w-full h-full object-cover animate-spin-slow" />
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+          "We Uplift Liveability for Families & Institutions"
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+          Operating primarily across North India, with a strong presence in Patna and Delhi, we work closely with homeowners, businesses, and developers to design, build, and balance spaces that truly support the people who use them.
+        </p>
+        <div class="pt-4 flex flex-wrap justify-center gap-4">
+          <a href="about.html" class="btn-chamfer px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase tracking-wider border border-white/10">
+            Read About Our Firm &rarr;
+          </a>
+          <a href="mission.html" class="btn-chamfer px-6 py-3 bg-[#e5b95c] text-black font-mono font-bold text-xs uppercase tracking-wider">
+            Explore Our Mission &rarr;
+          </a>
+          <a href="contact.html" class="btn-chamfer px-6 py-3 bg-gradient-to-r from-[#c8633a] to-[#e5b95c] text-black font-mono font-bold text-xs uppercase tracking-wider">
+            Contact Studios &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="border-t border-white/10 bg-[#040608] py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 brand-logo-frame flex items-center justify-center p-0.5">
+              <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Logo" class="brand-logo-img rounded-md" />
+            </div>
+            <span class="text-xl font-black font-cinzel tracking-wider text-white">VASTUSHED</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Architecture, Interior Design, Construction, and Vastu Consultancy delivering thoughtful, well-executed, and energetically aligned spaces across North India. 10 years of craft.
+          </p>
+          <div class="text-[11px] font-mono text-[#e5b95c]">DESIGN. BUILD. ALIGN.</div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">7 Dedicated Pages</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li><a href="index.html" class="text-white">1. Homepage</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">2. About Us</a></li>
+            <li><a href="architecture.html" class="hover:text-white transition-colors">3. Architecture & Interiors</a></li>
+            <li><a href="construction.html" class="hover:text-white transition-colors">4. Construction & Build</a></li>
+            <li><a href="vastu.html" class="hover:text-white transition-colors">5. Vastu Consultancy</a></li>
+            <li><a href="mission.html" class="hover:text-white transition-colors">6. Our Mission</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">7. Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider">Typologies</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li>Residential Homes & Villas</li>
+            <li>Commercial & Corporate HQs</li>
+            <li>Hospitality Resorts & Banquets</li>
+            <li>Cafes & Restaurants</li>
+            <li>Urban Design & Plotting</li>
+            <li>Biophilic Landscaping</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#c8633a] uppercase tracking-wider">Coordinates</div>
+          <div class="text-xs font-mono space-y-2 text-slate-400">
+            <div><strong>PATNA HUB:</strong> LAT 25°36'N // LONG 85°08'E</div>
+            <div><strong>DELHI HUB:</strong> LAT 28°36'N // LONG 77°12'E</div>
+            <div class="text-[10px] text-slate-500 pt-2">North India Project Coverage: Bihar, Delhi NCR, UP, Haryana & Regional Belt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+        <div>© 2026 VASTUSHED. All rights reserved. Built with awareness.</div>
+        <div class="flex items-center gap-6">
+          <span>Well Designed. Well Built. Well Aligned.</span>
+          <a href="index.html" class="text-[#e5b95c] hover:underline flex items-center gap-1">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal with Full Interactive Multi-Image Carousel -->
+  <div id="project-modal" class="project-modal fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md hidden">
+    <div class="glass-panel w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl border border-[#e5b95c]/40 p-6 sm:p-8 cad-corner relative shadow-2xl">
+      <button id="modal-close-btn" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors z-20">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="space-y-6">
+        <!-- Main Image Display with Slider Controls -->
+        <div class="relative h-72 sm:h-96 rounded-xl overflow-hidden border border-white/10 group bg-black/40">
+          <img id="modal-project-img" src="" alt="Project Image" class="w-full h-full object-cover transition-all duration-300" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent pointer-events-none"></div>
+          
+          <!-- Modal Slider Arrows -->
+          <button id="modal-slider-prev" onclick="navigateModalSlide(-1)" class="slider-arrow-btn prev !w-10 !h-10 text-white z-20" aria-label="Previous Photo" title="Previous Image">
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </button>
+          <button id="modal-slider-next" onclick="navigateModalSlide(1)" class="slider-arrow-btn next !w-10 !h-10 text-white z-20" aria-label="Next Photo" title="Next Image">
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+
+          <!-- Slide Angle / Caption Badge -->
+          <div id="modal-slide-label" class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 z-10">
+            01 // Exterior Perspective
+          </div>
+
+          <div id="modal-project-tags" class="absolute top-3 left-3 flex flex-wrap gap-2 pointer-events-none"></div>
+        </div>
+
+        <!-- Multi-Image Thumbnails Row -->
+        <div>
+          <div class="text-[11px] font-mono text-slate-400 mb-2 flex items-center justify-between">
+            <span>MULTIPLE PROJECT PERSPECTIVES (CLICK TO SWITCH):</span>
+            <span class="text-[#e5b95c]">Use Keyboard &larr; &rarr; keys</span>
+          </div>
+          <div id="modal-thumbnails" class="flex items-center gap-2.5 overflow-x-auto pb-1"></div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i>
+            <span id="modal-project-location"></span>
+            <span>•</span>
+            <span id="modal-project-area" class="text-[#e5b95c] font-bold"></span>
+          </div>
+          <h3 id="modal-project-title" class="text-2xl sm:text-3xl font-bold font-tech text-white"></h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+          <div class="p-3 bg-white/5 rounded border border-white/5">
+            <span class="text-slate-400 block mb-1">Contract Scope:</span>
+            <span id="modal-project-scope" class="text-white font-semibold"></span>
+          </div>
+          <div class="p-3 bg-[#e5b95c]/10 rounded border border-[#e5b95c]/20">
+            <span class="text-[#e5b95c] block mb-1">Vastu Energy Integration:</span>
+            <span id="modal-project-vastu" class="text-slate-200"></span>
+          </div>
+        </div>
+        <p id="modal-project-desc" class="text-sm text-slate-300 font-light leading-relaxed"></p>
+        <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <span class="text-xs font-mono text-slate-400">Ready to build a similar space?</span>
+          <a id="modal-whatsapp-btn" href="#" target="_blank" class="btn-chamfer px-6 py-3 bg-[#e5b95c] text-black font-bold font-tech text-xs uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+            <span>Inquire About This Project</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick WhatsApp Connect Pill -->
+  <aside aria-label="Direct Consultation WhatsApp" class="fixed bottom-6 right-6 z-40">
+    <a href="https://wa.me/919876543210?text=Hello%20VASTUSHED%20Team%2C%20I%20would%20like%20to%20consult%20about%20an%20upcoming%20project." target="_blank" class="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full shadow-2xl hover:scale-105 transition-transform border border-emerald-300/40 group font-mono text-xs">
+      <i data-lucide="message-circle" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+      <span class="hidden sm:inline font-bold">WhatsApp Direct</span>
+    </a>
+  </aside>
+
+  <!-- JavaScript Modules -->
+  <script src="js/sacred-geometry-hero.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Interactive VASTU AI ARCHITECT Mascot -->
+  <script src="js/ai-mascot.js"></script>
+</body>
+</html>

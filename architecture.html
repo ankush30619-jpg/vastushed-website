@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture & Interior Design | VASTUSHED</title>
+  <meta name="description" content="Explore VASTUSHED Architecture and Interior Design services: residential villas, hospitality resorts, corporate offices, cafes, and urban plotting across Patna and Delhi." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070a0d',
+              surface: '#0d1318',
+              card: '#131c23',
+              gold: '#e5b95c',
+              copper: '#c8633a',
+              sandstone: '#e2d9cc',
+              cyan: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#070a0d] text-slate-100 selection:bg-[#e5b95c] selection:text-black architectural-grid min-h-screen relative">
+
+  <!-- =========================================================================
+       NAVIGATION BAR (ACTIVE: ARCHITECTURE & INTERIORS)
+       ========================================================================= -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-white/10 bg-[#070a0d]/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 brand-logo-frame flex items-center justify-center p-0.5 group-hover:border-[#e5b95c] transition-all">
+          <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Official Logo" class="brand-logo-img rounded-lg group-hover:scale-105 transition-transform" />
+        </div>
+        <div>
+          <span class="text-2xl font-black font-cinzel tracking-wider text-white flex items-center gap-1.5">
+            VASTUSHED
+          </span>
+          <span class="block text-[10px] font-mono tracking-widest text-[#e5b95c] uppercase">Design • Build • Align</span>
+        </div>
+      </a>
+
+      <!-- 7 Dedicated Pages Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-mono tracking-wider uppercase text-slate-300">
+        <a href="index.html" class="nav-link hover:text-[#e5b95c]">Home</a>
+        <a href="about.html" class="nav-link hover:text-[#e5b95c]">About Us</a>
+        <a href="architecture.html" class="nav-link active">Architecture & Interiors</a>
+        <a href="construction.html" class="nav-link hover:text-[#e5b95c]">Construction</a>
+        <a href="vastu.html" class="nav-link hover:text-[#e5b95c]">Vastu Consultancy</a>
+        <a href="mission.html" class="nav-link hover:text-[#e5b95c]">Our Mission</a>
+        <a href="contact.html" class="nav-link hover:text-[#e5b95c]">Contact Us</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contact.html" class="btn-chamfer px-5 py-2.5 bg-gradient-to-r from-[#e5b95c] to-[#c8633a] text-black font-semibold text-xs tracking-wider uppercase hover:opacity-95 transition-opacity flex items-center gap-2">
+          <i data-lucide="compass" class="w-4 h-4 text-black"></i>
+          <span>Consult With Us</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#070a0d]/98 border-b border-white/10 px-6 py-6 space-y-4 text-sm font-mono uppercase">
+      <a href="index.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Home</a>
+      <a href="about.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">About Us</a>
+      <a href="architecture.html" class="block text-[#e5b95c] font-bold py-1">Architecture & Interiors</a>
+      <a href="construction.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Construction</a>
+      <a href="vastu.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Vastu Consultancy</a>
+      <a href="mission.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Our Mission</a>
+      <a href="contact.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Contact Us</a>
+      <div class="pt-4 border-t border-white/10">
+        <a href="contact.html" class="block w-full text-center py-3 bg-[#e5b95c] text-black font-bold uppercase text-xs">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28 pb-20">
+    <!-- PAGE HERO HEADER -->
+    <section class="py-16 relative border-b border-white/10 bg-gradient-to-b from-[#0c1217] to-[#070a0d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/30 text-[#38bdf8] text-xs font-mono tracking-widest uppercase mb-4">
+          PAGE 03 // CORE SERVICE 01
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black font-cinzel text-white max-w-4xl leading-tight">
+          Architecture & <br />
+          <span class="gradient-sandstone">Interior Design</span>
+        </h1>
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl font-light mt-4 leading-relaxed">
+          We provide end-to-end architectural and interior design services for residential homes, corporate offices, luxury hospitality resorts, cafes, and master plotting—crafting spaces that are functional, aesthetically refined, easy to execute, and energetically aligned.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 SPECIALIZATION TYPOLOGIES -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10 text-white text-xs font-mono tracking-widest uppercase">
+            Typology Mastery
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+            Comprehensive Practice Domains
+          </h2>
+          <p class="text-slate-400 text-sm font-light">
+            With 10 years of experience, we specialize across diverse residential, institutional, and commercial sectors.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+          <div class="glass-panel p-6 rounded-2xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-[#e5b95c]/10 text-[#e5b95c] flex items-center justify-center">
+              <i data-lucide="home" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Residential Homes & Villas</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Bespoke bungalows, duplexes, multi-family residences, and luxury apartments designed with private courtyards, natural daylighting, and sacred Vedic energy zoning.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-[#38bdf8]/10 text-[#38bdf8] flex items-center justify-center">
+              <i data-lucide="building-2" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Commercial Offices & Retail</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Corporate headquarters, creative studios, and retail showrooms engineered for ergonomic collaboration, brand prominence, acoustic insulation, and cash-flow Vastu alignment.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-[#c8633a]/10 text-[#c8633a] flex items-center justify-center">
+              <i data-lucide="bed" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Hospitality, Resorts & Banquets</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Destination wedding banquets, boutique luxury hotels, and eco-resorts featuring monumental column-free ballrooms, experiential chalets, and landscaped lagoons.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+              <i data-lucide="coffee" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Cafes & Restaurants</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              High-concept dining spaces, artisan coffee roasteries, and alfresco lounges integrating earthen terracotta textures, biophilic greenery, and acoustic micro-cement.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+              <i data-lucide="map" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Urban Design & Plotting</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Master planning, gated enclave sub-divisions, road networks, and infrastructure plotting aligned according to ancient cardinal grid principles and modern solar hydrology.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-teal-400/10 text-teal-400 flex items-center justify-center">
+              <i data-lucide="trees" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Landscaping & Biophilic Design</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Sensory gardens, restorative water features, rooftop terraces, and indigenous flora selection harmonizing the micro-climate and purifying atmospheric energy.
+            </p>
+          </div>
+        </div>
+
+        <!-- BLUEPRINT-TO-RENDER SLIDER -->
+        <div class="mb-20">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <span class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">Interactive Dual-Vision</span>
+              <h2 class="text-2xl sm:text-3xl font-bold font-tech text-white">
+                From Technical Blueprint to Reality
+              </h2>
+            </div>
+            <div class="text-xs font-mono text-slate-400 hidden sm:flex items-center gap-2">
+              <i data-lucide="move-horizontal" class="w-4 h-4 text-[#e5b95c]"></i>
+              <span>DRAG SLIDER TO REVEAL</span>
+            </div>
+          </div>
+
+          <div id="blueprint-comparison" class="comparison-wrapper">
+            <img 
+              src="assets/images/project-villa.jpg" 
+              alt="Finished Architectural 3D Render - VASTUSHED" 
+              class="slider-img-after"
+            />
+            <div class="slider-before-container">
+              <img 
+              src="assets/images/blueprint-render.jpg" 
+              alt="CAD Architectural Blueprint & Vastu Purusha Mandala" 
+              class="slider-img-before"
+            />
+              <div class="absolute inset-0 bg-blue-950/60 mix-blend-color-burn pointer-events-none"></div>
+              <div class="absolute inset-0 blueprint-overlay pointer-events-none"></div>
+              <div class="absolute top-4 left-4 bg-blue-900/90 text-white font-mono text-xs px-3 py-1 rounded border border-cyan-400/40">
+                CAD DRAFTING & VASTU GRID
+              </div>
+            </div>
+
+            <div class="slider-handle">
+              <i data-lucide="chevrons-left-right" class="w-5 h-5 text-[#e5b95c]"></i>
+            </div>
+
+            <div class="absolute top-4 right-4 bg-black/80 text-[#e5b95c] font-mono text-xs px-3 py-1 rounded border border-[#e5b95c]/40 z-10">
+              3D PHOTOREALISTIC RENDER
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             INFOGRAPHIC: 6-STAGE ARCHITECTURAL DESIGN-TO-BUILD LIFECYCLE
+             =================================================================== -->
+        <div class="mb-24">
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/30 text-[#38bdf8] text-xs font-mono tracking-widest uppercase">
+              Integrated Technical Infographic
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black font-cinzel text-white">
+              The 6-Phase Design-to-Build Lifecycle
+            </h2>
+            <p class="text-slate-400 text-sm font-light">
+              How VASTUSHED synthesizes ancient spatial harmony with modern parametric BIM engineering.
+            </p>
+          </div>
+
+          <!-- Interactive Infographic Flowchart Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Phase 1 -->
+            <div class="glass-panel infographic-step p-6 rounded-2xl border-t-2 border-t-[#38bdf8] cad-corner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-[#38bdf8]">PHASE 01 // SURVEY</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#38bdf8]/10 text-[#38bdf8] border border-[#38bdf8]/20">CLIMATOLOGY</span>
+              </div>
+              <h4 class="text-lg font-bold font-tech text-white">Solar & Geotechnical Survey</h4>
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                Digital total-station site topography, soil load-bearing capacity tests, annual sun-path trajectory analysis, and seasonal wind azimuth mapping.
+              </p>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>Deliverable:</span>
+                <span class="text-white font-semibold">Site Feasibility Dossier</span>
+              </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="glass-panel infographic-step p-6 rounded-2xl border-t-2 border-t-[#e5b95c] cad-corner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-[#e5b95c]">PHASE 02 // VASTU GRID</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#e5b95c]/10 text-[#e5b95c] border border-[#e5b95c]/20">MANDALA ALIGN</span>
+              </div>
+              <h4 class="text-lg font-bold font-tech text-white">Vedic Spatial Zoning & Layout</h4>
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                Overlaying the 9-Sector Vastu Purusha Mandala onto cardinal axes. Room allocations mapped to elemental forces (Water in NE, Fire in SE, Earth in SW).
+              </p>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>Deliverable:</span>
+                <span class="text-white font-semibold">2D Schematic Floor Plans</span>
+              </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="glass-panel infographic-step p-6 rounded-2xl border-t-2 border-t-[#c8633a] cad-corner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-[#c8633a]">PHASE 03 // VISUALIZATION</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#c8633a]/10 text-[#c8633a] border border-[#c8633a]/20">4K RAY-TRACING</span>
+              </div>
+              <h4 class="text-lg font-bold font-tech text-white">Photorealistic 3D Renders</h4>
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                High-definition 3D exterior elevations, dusk architectural lighting simulations, and interior walk-throughs showcasing precise natural material textures.
+              </p>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>Deliverable:</span>
+                <span class="text-white font-semibold">4K CGI Renders & Walkthrough</span>
+              </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="glass-panel infographic-step p-6 rounded-2xl border-t-2 border-t-emerald-400 cad-corner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-emerald-400">PHASE 04 // ENGINEERING</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-400 border border-emerald-400/20">GFC DRAWINGS</span>
+              </div>
+              <h4 class="text-lg font-bold font-tech text-white">Structural & MEP Working Sets</h4>
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                Seismic rebar schedules, column-beam sections, concealed plumbing raceways, electrical load balancing, and central HVAC ducting schematics.
+              </p>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>Deliverable:</span>
+                <span class="text-white font-semibold">GFC Construction Blueprint Set</span>
+              </div>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="glass-panel infographic-step p-6 rounded-2xl border-t-2 border-t-amber-400 cad-corner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-amber-400">PHASE 05 // QUANTITIES</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-400/10 text-amber-400 border border-amber-400/20">AUDITED BOQ</span>
+              </div>
+              <h4 class="text-lg font-bold font-tech text-white">Material Specs & Audited BOQ</h4>
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                Itemized Bill of Quantities down to kilograms of steel, cubic meters of concrete, square feet of Italian marble, joinery hardware, and transparent cost estimates.
+              </p>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>Deliverable:</span>
+                <span class="text-white font-semibold">Transparent Procurement BOQ</span>
+              </div>
+            </div>
+
+            <!-- Phase 6 -->
+            <div class="glass-panel infographic-step p-6 rounded-2xl border-t-2 border-t-purple-400 cad-corner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-purple-400">PHASE 06 // EXECUTION</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-400/10 text-purple-400 border border-purple-400/20">ON-SITE QA</span>
+              </div>
+              <h4 class="text-lg font-bold font-tech text-white">Site Calibration & Supervision</h4>
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                Periodic site inspections by senior architects, laser-level alignment checks, snag clearing, and final Vastu energy harmonization before client move-in.
+              </p>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>Deliverable:</span>
+                <span class="text-white font-semibold">Zero-Snag Handover Certification</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             SECTION: 3 ARCHITECTURAL SERVICES PACKAGES
+             =================================================================== -->
+        <div class="mb-24">
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e5b95c]/10 border border-[#e5b95c]/30 text-[#e5b95c] text-xs font-mono tracking-widest uppercase">
+              Transparent Service Tiers
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+              Architectural Services Packages
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base font-light">
+              Choose the architectural scope matched to your project scale—from early concept layout to comprehensive design & turnkey site supervision.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- PACKAGE 1: CONCEPT & BLUEPRINTING -->
+            <div class="package-card p-8 rounded-2xl cad-corner flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider font-bold">PACKAGE TIER 01</div>
+                  <h3 class="text-2xl font-bold font-tech text-white">Concept & Vastu Blueprinting</h3>
+                  <p class="text-xs text-slate-400 leading-relaxed font-light">
+                    Ideal for landowners, developers, and homeowners initiating municipal approvals and establishing harmonious space zoning.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div class="text-xs font-mono text-slate-400 uppercase">Estimated Turnaround</div>
+                  <div class="text-xl font-bold font-tech text-white mt-0.5">10 - 14 Business Days</div>
+                  <div class="text-[11px] font-mono text-[#38bdf8]">2 Design Revision Iterations Included</div>
+                </div>
+
+                <div class="space-y-3">
+                  <span class="text-xs font-mono text-slate-300 uppercase tracking-wider block font-semibold">Scope & Deliverables:</span>
+                  <ul class="text-xs font-mono text-slate-300 space-y-2.5">
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>2D Architectural Floor Plans (All Levels)</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>8-Direction Vastu Grid Alignment & Zoning</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>Structural Conceptual Grid & Column Layout</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>Circulation Flows & Furniture Space Planning</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>High-Resolution Digital PDF Package</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pt-8 mt-8 border-t border-white/10">
+                <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Concept%20%26%20Vastu%20Blueprinting%20Package" target="_blank" class="btn-chamfer w-full text-center py-3.5 bg-white/5 hover:bg-white/10 text-white border border-white/20 font-bold font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-[#38bdf8]"></i>
+                  <span>Inquire for Tier 01</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- PACKAGE 2: COMPREHENSIVE ARCHITECTURE & 3D (FEATURED) -->
+            <div class="package-card featured p-8 rounded-2xl cad-corner flex flex-col justify-between relative shadow-2xl">
+              <div class="package-badge">MOST POPULAR // TURNKEY DESIGN</div>
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider font-bold">PACKAGE TIER 02</div>
+                  <h3 class="text-2xl font-bold font-tech text-white">Comprehensive Architecture & 3D</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed font-light">
+                    The complete architectural package for luxury villas, corporate offices, and resorts needing photorealistic 3D visuals and complete working sheets.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-[#e5b95c]/10 border border-[#e5b95c]/30">
+                  <div class="text-xs font-mono text-[#e5b95c] uppercase">Estimated Turnaround</div>
+                  <div class="text-xl font-bold font-tech text-white mt-0.5">3 - 5 Weeks</div>
+                  <div class="text-[11px] font-mono text-slate-300">Complete Ready-to-Build Documentation</div>
+                </div>
+
+                <div class="space-y-3">
+                  <span class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider block font-semibold">Everything in Tier 01, plus:</span>
+                  <ul class="text-xs font-mono text-slate-200 space-y-2.5">
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>4K Ultra-Photorealistic 3D Exterior Elevations</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>3D Key Interior Perspectives (Living, Bed, Kitchen)</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Full GFC (Good For Construction) Working Sheets</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Structural Reinforcement & Foundation Drawings</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Full MEP (Plumbing, Electrical, HVAC) Layouts</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Detailed Material Specs & Audited BOQ</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pt-8 mt-8 border-t border-white/10">
+                <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Comprehensive%20Architecture%20%26%203D%20Package" target="_blank" class="btn-chamfer w-full text-center py-3.5 bg-gradient-to-r from-[#e5b95c] via-[#f59e0b] to-[#c8633a] text-black font-black font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+                  <span>Select Comprehensive Package</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- PACKAGE 3: BESPOKE MASTERPIECE & SUPERVISION -->
+            <div class="package-card p-8 rounded-2xl cad-corner flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="text-xs font-mono text-[#c8633a] uppercase tracking-wider font-bold">PACKAGE TIER 03</div>
+                  <h3 class="text-2xl font-bold font-tech text-white">Bespoke Masterpiece & Supervision</h3>
+                  <p class="text-xs text-slate-400 leading-relaxed font-light">
+                    For landmark luxury estates, destination banquets, and commercial projects requiring complete design plus on-ground execution supervision.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div class="text-xs font-mono text-slate-400 uppercase">Duration & Coverage</div>
+                  <div class="text-xl font-bold font-tech text-white mt-0.5">Full Project Lifecycle</div>
+                  <div class="text-[11px] font-mono text-[#c8633a]">Site Visits + Contractor Auditing</div>
+                </div>
+
+                <div class="space-y-3">
+                  <span class="text-xs font-mono text-slate-300 uppercase tracking-wider block font-semibold">Everything in Tier 02, plus:</span>
+                  <ul class="text-xs font-mono text-slate-300 space-y-2.5">
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Custom Architectural Joinery & Millwork Detailing</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Biophilic Landscape, Water Body & Hardscape Design</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Bi-Weekly On-Site Inspections & Engineer Oversight</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Direct Material Sourcing Assistance (Marble, Lights)</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Final Vastu Energy Calibration & Handover Snags</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pt-8 mt-8 border-t border-white/10">
+                <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Bespoke%20Masterpiece%20%26%20Site%20Supervision%20Package" target="_blank" class="btn-chamfer w-full text-center py-3.5 bg-white/5 hover:bg-white/10 text-white border border-white/20 font-bold font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-[#c8633a]"></i>
+                  <span>Inquire for Signature Tier</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             FILTERABLE PROJECT PORTFOLIO (WITH LOCAL REALISTIC PHOTOS EMBEDDED)
+             =================================================================== -->
+        <div class="mb-20">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <div>
+              <span class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">Project Portfolio</span>
+              <h3 class="text-2xl sm:text-3xl font-bold font-tech text-white">Curated Architectural Works</h3>
+            </div>
+
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <button class="filter-btn active px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" data-filter="all">All</button>
+              <button class="filter-btn px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" data-filter="residential">Residential</button>
+              <button class="filter-btn px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" data-filter="hospitality">Hospitality</button>
+              <button class="filter-btn px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" data-filter="commercial">Commercial</button>
+              <button class="filter-btn px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10" data-filter="urban-landscape">Urban & Landscape</button>
+            </div>
+          </div>
+
+          <!-- Static fallback cards embedded directly with local images to guarantee instant photo visibility -->
+          <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Project 1: Villa -->
+            <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(1)">
+              <div class="relative h-64 overflow-hidden bg-slate-900 card-slider-wrap">
+                <img data-project-img="1" src="assets/images/project-villa.jpg" alt="The Mandala Sanctum Villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                
+                <!-- Multi-Image Slider Arrows -->
+                <button class="slider-arrow-btn prev" onclick="navigateProjectCard(1, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="slider-arrow-btn next" onclick="navigateProjectCard(1, 1, event)" aria-label="Next Photo" title="Next Photo">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slide Dots Indicator -->
+                <div class="slider-dots" data-project-dots="1">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                  <span class="tech-tag">Residential</span>
+                  <span class="tech-tag">Turnkey</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="1">
+                  1 / 3
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                  7,400 sq.ft
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-2">
+                  <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Bailey Road, Patna</span>
+                  <span class="text-[#c8633a] font-semibold">Architecture</span>
+                </div>
+                <h3 class="text-xl font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">The Mandala Sanctum Villa</h3>
+                <p class="text-sm text-[#94a3b8] line-clamp-2 mb-4 font-light">A monolithic residence synthesizing ancient Vedic spatial proportions with exposed board-marked concrete and natural Kota stone.</p>
+                <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono">
+                  <span class="text-[#e2d9cc]/70 flex items-center gap-1"><i data-lucide="compass" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Vastu Aligned</span>
+                  <span class="text-[#e5b95c] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">View Blueprint & Specs &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Resort -->
+            <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(2)">
+              <div class="relative h-64 overflow-hidden bg-slate-900 card-slider-wrap">
+                <img data-project-img="2" src="assets/images/project-resort.jpg" alt="Aura Horizon Boutique Resort" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                
+                <!-- Multi-Image Slider Arrows -->
+                <button class="slider-arrow-btn prev" onclick="navigateProjectCard(2, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="slider-arrow-btn next" onclick="navigateProjectCard(2, 1, event)" aria-label="Next Photo" title="Next Photo">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slide Dots Indicator -->
+                <div class="slider-dots" data-project-dots="2">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                  <span class="tech-tag">Hospitality</span>
+                  <span class="tech-tag">Resort</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="2">
+                  1 / 3
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                  42,000 sq.ft
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-2">
+                  <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Rajgir / Bodh Gaya</span>
+                  <span class="text-[#c8633a] font-semibold">Master Plan</span>
+                </div>
+                <h3 class="text-xl font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">Aura Horizon Boutique Resort</h3>
+                <p class="text-sm text-[#94a3b8] line-clamp-2 mb-4 font-light">Eco-conscious luxury retreat featuring 32 villas, banquet lawns, and an Ayurvedic wellness pavilion harmonized with cosmic sun paths.</p>
+                <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono">
+                  <span class="text-[#e2d9cc]/70 flex items-center gap-1"><i data-lucide="compass" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Vastu Aligned</span>
+                  <span class="text-[#e5b95c] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">View Blueprint & Specs &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Office HQ -->
+            <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(3)">
+              <div class="relative h-64 overflow-hidden bg-slate-900 card-slider-wrap">
+                <img data-project-img="3" src="assets/images/project-office.jpg" alt="Sovereign Nexus Corporate HQ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                
+                <!-- Multi-Image Slider Arrows -->
+                <button class="slider-arrow-btn prev" onclick="navigateProjectCard(3, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="slider-arrow-btn next" onclick="navigateProjectCard(3, 1, event)" aria-label="Next Photo" title="Next Photo">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slide Dots Indicator -->
+                <div class="slider-dots" data-project-dots="3">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                  <span class="tech-tag">Commercial</span>
+                  <span class="tech-tag">Delhi NCR</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="3">
+                  1 / 3
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                  18,500 sq.ft
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-2">
+                  <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Aerocity, Delhi NCR</span>
+                  <span class="text-[#c8633a] font-semibold">Interiors</span>
+                </div>
+                <h3 class="text-xl font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">Sovereign Nexus Corporate HQ</h3>
+                <p class="text-sm text-[#94a3b8] line-clamp-2 mb-4 font-light">A biophilic high-tech corporate office featuring smart acoustic wooden baffles, dynamic circadian lighting, and non-destructive Vastu alignment.</p>
+                <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono">
+                  <span class="text-[#e2d9cc]/70 flex items-center gap-1"><i data-lucide="compass" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Vastu Aligned</span>
+                  <span class="text-[#e5b95c] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">View Blueprint & Specs &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Cafe -->
+            <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(4)">
+              <div class="relative h-64 overflow-hidden bg-slate-900 card-slider-wrap">
+                <img data-project-img="4" src="assets/images/project-cafe.jpg" alt="Terra Veda Botanical Cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                
+                <!-- Multi-Image Slider Arrows -->
+                <button class="slider-arrow-btn prev" onclick="navigateProjectCard(4, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="slider-arrow-btn next" onclick="navigateProjectCard(4, 1, event)" aria-label="Next Photo" title="Next Photo">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slide Dots Indicator -->
+                <div class="slider-dots" data-project-dots="4">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                  <span class="tech-tag">Cafe</span>
+                  <span class="tech-tag">Patna</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="4">
+                  1 / 3
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                  3,800 sq.ft
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-2">
+                  <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Boring Road, Patna</span>
+                  <span class="text-[#c8633a] font-semibold">Hospitality</span>
+                </div>
+                <h3 class="text-xl font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">Terra Veda Botanical Cafe</h3>
+                <p class="text-sm text-[#94a3b8] line-clamp-2 mb-4 font-light">An earthy sensory sanctuary blending handcrafted terracotta jaali, reclaimed teakwood, cascading indoor flora, and micro-cement textures.</p>
+                <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono">
+                  <span class="text-[#e2d9cc]/70 flex items-center gap-1"><i data-lucide="compass" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Vastu Aligned</span>
+                  <span class="text-[#e5b95c] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">View Blueprint & Specs &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Banquet -->
+            <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(5)">
+              <div class="relative h-64 overflow-hidden bg-slate-900 card-slider-wrap">
+                <img data-project-img="5" src="assets/images/project-banquet.jpg" alt="Prana Grand Banquet Pavilion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                
+                <!-- Multi-Image Slider Arrows -->
+                <button class="slider-arrow-btn prev" onclick="navigateProjectCard(5, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="slider-arrow-btn next" onclick="navigateProjectCard(5, 1, event)" aria-label="Next Photo" title="Next Photo">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slide Dots Indicator -->
+                <div class="slider-dots" data-project-dots="5">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                  <span class="tech-tag">Banquet</span>
+                  <span class="tech-tag">Build</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="5">
+                  1 / 3
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                  55,000 sq.ft
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-2">
+                  <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Greater Noida / Delhi</span>
+                  <span class="text-[#c8633a] font-semibold">Structural Build</span>
+                </div>
+                <h3 class="text-xl font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">Prana Grand Banquet Pavilion</h3>
+                <p class="text-sm text-[#94a3b8] line-clamp-2 mb-4 font-light">Monumental banquet architecture featuring a 24-foot soaring ceiling, column-free cosmic acoustics, and landscaped water fountains.</p>
+                <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono">
+                  <span class="text-[#e2d9cc]/70 flex items-center gap-1"><i data-lucide="compass" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Vastu Aligned</span>
+                  <span class="text-[#e5b95c] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">View Blueprint & Specs &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: Urban Plotting -->
+            <div class="glass-panel group rounded-xl overflow-hidden cursor-pointer cad-corner transition-all duration-300" onclick="openProjectModal(6)">
+              <div class="relative h-64 overflow-hidden bg-slate-900 card-slider-wrap">
+                <img data-project-img="6" src="assets/images/project-urban.jpg" alt="Vedic Ridge Urban Enclave" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                
+                <!-- Multi-Image Slider Arrows -->
+                <button class="slider-arrow-btn prev" onclick="navigateProjectCard(6, -1, event)" aria-label="Previous Photo" title="Previous Photo">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button class="slider-arrow-btn next" onclick="navigateProjectCard(6, 1, event)" aria-label="Next Photo" title="Next Photo">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Slide Dots Indicator -->
+                <div class="slider-dots" data-project-dots="6">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 pointer-events-none">
+                  <span class="tech-tag">Urban Design</span>
+                  <span class="tech-tag">Plotting</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-mono text-[#e5b95c] border border-white/10" data-project-label="6">
+                  1 / 3
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 pointer-events-none">
+                  18 Acres
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs font-mono text-[#94a3b8] mb-2">
+                  <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Bihta Corridor, Patna</span>
+                  <span class="text-[#c8633a] font-semibold">Master Planning</span>
+                </div>
+                <h3 class="text-xl font-bold font-tech text-white mb-2 group-hover:text-[#e5b95c] transition-colors">Vedic Ridge Urban Enclave</h3>
+                <p class="text-sm text-[#94a3b8] line-clamp-2 mb-4 font-light">Gated master-planned township designed with ancient Vedic urban plotting (Vastu Purusha 9-Sector Grid) and solar drainage.</p>
+                <div class="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono">
+                  <span class="text-[#e2d9cc]/70 flex items-center gap-1"><i data-lucide="compass" class="w-3.5 h-3.5 text-[#38bdf8]"></i> Vastu Aligned</span>
+                  <span class="text-[#e5b95c] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">View Blueprint & Specs &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- WHAT OUR CLIENTS SAY -->
+        <div>
+          <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+            <span class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider">Client Reviews</span>
+            <h3 class="text-2xl sm:text-3xl font-bold font-tech text-white">What Project Owners Say</h3>
+          </div>
+          <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#040608] py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 brand-logo-frame flex items-center justify-center p-0.5">
+              <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Logo" class="brand-logo-img rounded-md" />
+            </div>
+            <span class="text-xl font-black font-cinzel tracking-wider text-white">VASTUSHED</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Architecture, Interior Design, Construction, and Vastu Consultancy delivering thoughtful, well-executed, and energetically aligned spaces across North India. 10 years of craft.
+          </p>
+          <div class="text-[11px] font-mono text-[#e5b95c]">DESIGN. BUILD. ALIGN.</div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">7 Dedicated Pages</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition-colors">1. Homepage</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">2. About Us</a></li>
+            <li><a href="architecture.html" class="text-white font-semibold">3. Architecture & Interiors</a></li>
+            <li><a href="construction.html" class="hover:text-white transition-colors">4. Construction & Build</a></li>
+            <li><a href="vastu.html" class="hover:text-white transition-colors">5. Vastu Consultancy</a></li>
+            <li><a href="mission.html" class="hover:text-white transition-colors">6. Our Mission</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">7. Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider">Typologies</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li>Residential Homes & Villas</li>
+            <li>Commercial & Corporate HQs</li>
+            <li>Hospitality Resorts & Banquets</li>
+            <li>Cafes & Restaurants</li>
+            <li>Urban Design & Plotting</li>
+            <li>Biophilic Landscaping</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#c8633a] uppercase tracking-wider">Coordinates</div>
+          <div class="text-xs font-mono space-y-2 text-slate-400">
+            <div><strong>PATNA HUB:</strong> LAT 25°36'N // LONG 85°08'E</div>
+            <div><strong>DELHI HUB:</strong> LAT 28°36'N // LONG 77°12'E</div>
+            <div class="text-[10px] text-slate-500 pt-2">North India Project Coverage: Bihar, Delhi NCR, UP, Haryana & Regional Belt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+        <div>© 2026 VASTUSHED. All rights reserved. Built with awareness.</div>
+        <div class="flex items-center gap-6">
+          <span>Well Designed. Well Built. Well Aligned.</span>
+          <a href="architecture.html" class="text-[#e5b95c] hover:underline flex items-center gap-1">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal with Full Interactive Multi-Image Carousel -->
+  <div id="project-modal" class="project-modal fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md hidden">
+    <div class="glass-panel w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl border border-[#e5b95c]/40 p-6 sm:p-8 cad-corner relative shadow-2xl">
+      <button id="modal-close-btn" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors z-20">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="space-y-6">
+        <!-- Main Image Display with Slider Controls -->
+        <div class="relative h-72 sm:h-96 rounded-xl overflow-hidden border border-white/10 group bg-black/40">
+          <img id="modal-project-img" src="" alt="Project Image" class="w-full h-full object-cover transition-all duration-300" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#070a0d] via-transparent to-transparent pointer-events-none"></div>
+          
+          <!-- Modal Slider Arrows -->
+          <button id="modal-slider-prev" onclick="navigateModalSlide(-1)" class="slider-arrow-btn prev !w-10 !h-10 text-white z-20" aria-label="Previous Photo" title="Previous Image">
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </button>
+          <button id="modal-slider-next" onclick="navigateModalSlide(1)" class="slider-arrow-btn next !w-10 !h-10 text-white z-20" aria-label="Next Photo" title="Next Image">
+            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+          </button>
+
+          <!-- Slide Angle / Caption Badge -->
+          <div id="modal-slide-label" class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-[#e5b95c] border border-[#e5b95c]/30 z-10">
+            01 // Exterior Perspective
+          </div>
+
+          <div id="modal-project-tags" class="absolute top-3 left-3 flex flex-wrap gap-2 pointer-events-none"></div>
+        </div>
+
+        <!-- Multi-Image Thumbnails Row -->
+        <div>
+          <div class="text-[11px] font-mono text-slate-400 mb-2 flex items-center justify-between">
+            <span>MULTIPLE PROJECT PERSPECTIVES (CLICK TO SWITCH):</span>
+            <span class="text-[#e5b95c]">Use Keyboard &larr; &rarr; keys</span>
+          </div>
+          <div id="modal-thumbnails" class="flex items-center gap-2.5 overflow-x-auto pb-1"></div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b95c]"></i>
+            <span id="modal-project-location"></span>
+            <span>•</span>
+            <span id="modal-project-area" class="text-[#e5b95c] font-bold"></span>
+          </div>
+          <h3 id="modal-project-title" class="text-2xl sm:text-3xl font-bold font-tech text-white"></h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+          <div class="p-3 bg-white/5 rounded border border-white/5">
+            <span class="text-slate-400 block mb-1">Contract Scope:</span>
+            <span id="modal-project-scope" class="text-white font-semibold"></span>
+          </div>
+          <div class="p-3 bg-[#e5b95c]/10 rounded border border-[#e5b95c]/20">
+            <span class="text-[#e5b95c] block mb-1">Vastu Energy Integration:</span>
+            <span id="modal-project-vastu" class="text-slate-200"></span>
+          </div>
+        </div>
+        <p id="modal-project-desc" class="text-sm text-slate-300 font-light leading-relaxed"></p>
+        <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <span class="text-xs font-mono text-slate-400">Ready to build a similar space?</span>
+          <a id="modal-whatsapp-btn" href="#" target="_blank" class="btn-chamfer px-6 py-3 bg-[#e5b95c] text-black font-bold font-tech text-xs uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+            <span>Inquire About This Project</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/comparison-slider.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ai-mascot.js"></script>
+</body>
+</html>

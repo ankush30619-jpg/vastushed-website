@@ -1,0 +1,1103 @@
+/* ==========================================================================
+   VASTUSHED - Architecture, Construction & Vastu Consultancy
+   Theme: Ancient Vedic Sacred Geometry meets Futuristic Parametric Modernism
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --bg-primary: #070a0d;
+  --bg-secondary: #0d1318;
+  --bg-tertiary: #131c23;
+  --bg-card: rgba(14, 21, 28, 0.78);
+  --bg-card-hover: rgba(20, 31, 41, 0.92);
+  
+  --accent-gold: #e5b95c;
+  --accent-gold-light: #fef08a;
+  --accent-gold-glow: rgba(229, 185, 92, 0.28);
+  --accent-copper: #c8633a;
+  --accent-copper-glow: rgba(200, 99, 58, 0.28);
+  --accent-sandstone: #e2d9cc;
+  --accent-cyan: #38bdf8;
+  --accent-cyan-glow: rgba(56, 189, 248, 0.25);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-sandstone: #e2d9cc;
+
+  --border-subtle: rgba(226, 217, 204, 0.12);
+  --border-gold: rgba(229, 185, 92, 0.35);
+  --border-cyan: rgba(56, 189, 248, 0.35);
+  --border-copper: rgba(200, 99, 58, 0.35);
+
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-tech: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.65;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(229, 185, 92, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Official Logo Brand Badge */
+.brand-logo-frame {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid rgba(229, 185, 92, 0.5);
+  background: #0d1318;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(229, 185, 92, 0.2);
+}
+
+.brand-logo-frame:hover {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 25px rgba(229, 185, 92, 0.45);
+  transform: scale(1.04);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Architectural CAD Drafting Grid Background */
+.architectural-grid {
+  background-image: 
+    linear-gradient(to right, rgba(226, 217, 204, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 217, 204, 0.03) 1px, transparent 1px),
+    linear-gradient(to right, rgba(229, 185, 92, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 185, 92, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px;
+}
+
+/* Typography Utility */
+.font-cinzel { font-family: var(--font-serif); }
+.font-tech { font-family: var(--font-tech); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-gold);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6), 0 0 25px -5px var(--accent-gold-glow);
+}
+
+.glass-panel-copper:hover {
+  border-color: var(--border-copper);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6), 0 0 25px -5px var(--accent-copper-glow);
+}
+
+.glass-panel-cyan:hover {
+  border-color: var(--border-cyan);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6), 0 0 25px -5px var(--accent-cyan-glow);
+}
+
+/* Architectural Crosshair / Coordinate Markers */
+.cad-corner {
+  position: relative;
+}
+
+.cad-corner::before,
+.cad-corner::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--accent-gold);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.cad-corner::before {
+  top: 0;
+  left: 0;
+  border-top: 1.5px solid var(--accent-gold);
+  border-left: 1.5px solid var(--accent-gold);
+}
+
+.cad-corner::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1.5px solid var(--accent-gold);
+  border-right: 1.5px solid var(--accent-gold);
+}
+
+/* Ancient Sacred Geometry Spin & Pulse */
+@keyframes sacred-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes sacred-spin-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes energy-pulse {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.animate-spin-slow {
+  animation: sacred-spin 90s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: sacred-spin-reverse 120s linear infinite;
+}
+
+.animate-energy-pulse {
+  animation: energy-pulse 5s ease-in-out infinite;
+}
+
+/* Gradient Text Styling */
+.gradient-gold {
+  background: linear-gradient(135deg, #fff7d6 0%, #e5b95c 50%, #c8633a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-sandstone {
+  background: linear-gradient(135deg, #ffffff 0%, #e2d9cc 60%, #b89f81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-cyan {
+  background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 60%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Chamfered Buttons */
+.btn-chamfer {
+  position: relative;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-chamfer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(229, 185, 92, 0.35);
+}
+
+/* Nav Active Link */
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-gold);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--accent-gold) !important;
+}
+
+/* Blueprint vs 3D Render Interactive Split Slider */
+.comparison-wrapper {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7);
+  user-select: none;
+}
+
+.comparison-wrapper .slider-img-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comparison-wrapper .slider-before-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-right: 2.5px solid var(--accent-gold);
+  box-shadow: 4px 0 25px rgba(229, 185, 92, 0.6);
+  z-index: 5;
+}
+
+.comparison-wrapper .slider-img-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  filter: contrast(1.1) brightness(0.85) hue-rotate(185deg) saturate(1.8);
+}
+
+.comparison-wrapper .slider-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: ew-resize;
+  z-index: 15;
+  box-shadow: 0 0 25px rgba(229, 185, 92, 0.75);
+  color: var(--accent-gold);
+}
+
+/* Vastu Mandala Directional Nodes */
+.vastu-node {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.vastu-node:hover,
+.vastu-node.active {
+  transform: scale(1.05);
+  border-color: var(--accent-gold) !important;
+  background: rgba(229, 185, 92, 0.18) !important;
+  box-shadow: 0 0 20px var(--accent-gold-glow);
+}
+
+.vastu-compass-center {
+  background: radial-gradient(circle, rgba(229, 185, 92, 0.2) 0%, rgba(12, 18, 23, 0.95) 70%);
+}
+
+/* Project Filter Tabs */
+.filter-btn {
+  transition: all 0.25s ease;
+}
+
+.filter-btn.active {
+  background: var(--accent-gold) !important;
+  color: #070a0d !important;
+  font-weight: 600;
+  box-shadow: 0 0 18px var(--accent-gold-glow);
+}
+
+/* Technical Blueprint Line Effect */
+.blueprint-overlay {
+  background: 
+    linear-gradient(rgba(14, 165, 233, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.15) 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+/* Floating Technical Grid Lines */
+.tech-tag {
+  background: rgba(229, 185, 92, 0.08);
+  border: 1px solid rgba(229, 185, 92, 0.25);
+  color: var(--accent-gold);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+/* Modal Styling */
+.project-modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.project-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Numbers & Animated Stats Cards */
+.stat-box {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+}
+
+.stat-counter {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: var(--border-gold);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+/* Vastu Tip Card */
+.vastu-tip-card {
+  transition: all 0.3s ease;
+}
+
+.vastu-tip-card:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   PACKAGES & PRICING CARDS
+   ========================================================================== */
+.package-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-gold);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 30px -5px var(--accent-gold-glow);
+}
+
+.package-card.featured {
+  border: 1.5px solid rgba(229, 185, 92, 0.6);
+  background: linear-gradient(180deg, rgba(229, 185, 92, 0.08) 0%, rgba(13, 19, 24, 0.95) 100%);
+  box-shadow: 0 0 25px rgba(229, 185, 92, 0.18);
+}
+
+.package-badge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: linear-gradient(135deg, #e5b95c, #c8633a);
+  color: #070a0d;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(229, 185, 92, 0.4);
+}
+
+/* ==========================================================================
+   INFOGRAPHICS & INTERACTIVE MATRICES
+   ========================================================================== */
+.infographic-step {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.infographic-step:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-3px);
+}
+
+.matrix-row {
+  transition: background-color 0.2s ease;
+}
+
+.matrix-row:hover {
+  background-color: rgba(229, 185, 92, 0.04);
+}
+
+.element-pill {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.element-pill.active {
+  background: var(--accent-gold) !important;
+  color: #070a0d !important;
+  font-weight: 700;
+  box-shadow: 0 0 15px var(--accent-gold-glow);
+}
+
+/* ==========================================================================
+   MULTI-IMAGE PROJECT SLIDER ARROWS & DOTS
+   ========================================================================== */
+.card-slider-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(7, 10, 13, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(229, 185, 92, 0.4);
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.25s ease;
+  opacity: 0.85;
+}
+
+.slider-arrow-btn:hover {
+  background: var(--accent-gold);
+  color: #070a0d;
+  border-color: var(--accent-gold);
+  transform: translateY(-50%) scale(1.1);
+  opacity: 1;
+  box-shadow: 0 0 12px var(--accent-gold-glow);
+}
+
+.slider-arrow-btn.prev {
+  left: 8px;
+}
+
+.slider-arrow-btn.next {
+  right: 8px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 15;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 3px 8px;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+}
+
+.slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.slider-dot.active {
+  background: var(--accent-gold);
+  width: 16px;
+  border-radius: 9999px;
+  box-shadow: 0 0 6px var(--accent-gold-glow);
+}
+
+/* ==========================================================================
+   HOMEPAGE HERO INTERACTIVE PROJECT SLIDER
+   ========================================================================== */
+.hero-slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-project-slide,
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.97);
+  z-index: 1;
+}
+
+.hero-project-slide.active,
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+  z-index: 5;
+}
+
+/* ==========================================================================
+   AI 9X9 VASTU PURUSHA MANDALA (81-CELL PARAMASAYIKA GRID)
+   ========================================================================== */
+.vastu-81-grid {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 3px;
+  background: #04070a;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1.5px solid rgba(229, 185, 92, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(229, 185, 92, 0.05);
+}
+
+.vastu-81-cell {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  font-family: var(--font-mono);
+  background: rgba(13, 19, 24, 0.7);
+  border: 1px solid rgba(226, 217, 204, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.vastu-81-cell:hover {
+  transform: scale(1.08);
+  z-index: 10;
+  border-color: var(--accent-gold);
+  background: rgba(229, 185, 92, 0.15);
+  box-shadow: 0 0 14px rgba(229, 185, 92, 0.4);
+}
+
+.vastu-81-cell.pada-active {
+  border: 2px solid var(--accent-gold) !important;
+  background: rgba(229, 185, 92, 0.3) !important;
+  box-shadow: 0 0 20px rgba(229, 185, 92, 0.6) !important;
+  z-index: 12;
+}
+
+/* Brahma Sthana 9 Central Cells */
+.vastu-81-cell.pada-brahma {
+  background: linear-gradient(135deg, rgba(229, 185, 92, 0.18), rgba(200, 99, 58, 0.18));
+  border-color: rgba(229, 185, 92, 0.45);
+}
+
+/* Quadrant Tints */
+.vastu-81-cell.pada-ne { border-top-color: rgba(56, 189, 248, 0.4); border-right-color: rgba(56, 189, 248, 0.4); }
+.vastu-81-cell.pada-se { border-bottom-color: rgba(200, 99, 58, 0.4); border-right-color: rgba(200, 99, 58, 0.4); }
+.vastu-81-cell.pada-sw { border-bottom-color: rgba(217, 119, 6, 0.4); border-left-color: rgba(217, 119, 6, 0.4); }
+.vastu-81-cell.pada-nw { border-top-color: rgba(148, 163, 184, 0.4); border-left-color: rgba(148, 163, 184, 0.4); }
+
+/* AI Room Placement Scanner Highlights */
+.vastu-81-cell.pada-highlight-auspicious {
+  background: rgba(16, 185, 129, 0.32) !important;
+  border-color: #10b981 !important;
+  color: #a7f3d0 !important;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+  animation: pulse-glow-emerald 2s infinite;
+}
+
+.vastu-81-cell.pada-highlight-acceptable {
+  background: rgba(56, 189, 248, 0.22) !important;
+  border-color: #38bdf8 !important;
+  color: #bae6fd !important;
+}
+
+.vastu-81-cell.pada-highlight-prohibited {
+  background: rgba(239, 68, 68, 0.22) !important;
+  border-color: #ef4444 !important;
+  color: #fca5a5 !important;
+  opacity: 0.6;
+}
+
+@keyframes pulse-glow-emerald {
+  0%, 100% { box-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
+  50% { box-shadow: 0 0 18px rgba(16, 185, 129, 0.8); }
+}
+
+/* Modal Thumbnail Carousel Styling */
+.modal-thumb {
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.modal-thumb:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-gold) !important;
+  opacity: 0.9 !important;
+}
+
+/* ==========================================================================
+   AI VASTU COMPASS MANDALA ENGINE (EXTENDED 9X9 GRID COMPANION)
+   ========================================================================== */
+.glowing-compass-wrap {
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, rgba(13, 20, 27, 0.9) 0%, rgba(4, 7, 10, 0.98) 75%);
+  border: 1px solid rgba(229, 185, 92, 0.25);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(229, 185, 92, 0.04);
+}
+
+.compass-dial-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  overflow: hidden;
+}
+
+.compass-ring-decor {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.compass-ring-1 {
+  width: 340px;
+  height: 340px;
+  border: 1px dashed rgba(229, 185, 92, 0.3);
+  animation: spin-clockwise 60s linear infinite;
+}
+
+.compass-ring-2 {
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  animation: spin-counter 45s linear infinite;
+}
+
+.compass-ring-3 {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed rgba(200, 99, 58, 0.3);
+}
+
+@keyframes spin-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-counter {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.compass-layer-btn {
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.compass-layer-btn.active {
+  background: rgba(229, 185, 92, 0.15) !important;
+  color: var(--accent-gold) !important;
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 12px var(--accent-gold-glow);
+}
+
+.compass-node-chip {
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.compass-node-chip:hover {
+  transform: scale(1.06);
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 10px rgba(229, 185, 92, 0.4);
+}
+
+.compass-node-chip.active {
+  background: rgba(229, 185, 92, 0.25) !important;
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 16px rgba(229, 185, 92, 0.6) !important;
+}
+
+/* ==========================================================================
+   FLOOR PLAN VASTU EQUATION ANALYZER & REPORT GENERATOR
+   ========================================================================== */
+.dropzone-box {
+  border: 2px dashed rgba(229, 185, 92, 0.35);
+  transition: all 0.3s ease;
+  background: rgba(13, 20, 27, 0.5);
+}
+
+.dropzone-box:hover, .dropzone-box.drag-over {
+  border-color: var(--accent-gold);
+  background: rgba(229, 185, 92, 0.08);
+  box-shadow: 0 0 20px var(--accent-gold-glow);
+}
+
+.plan-canvas-frame {
+  position: relative;
+  overflow: hidden;
+  background: #020406;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.plan-grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-size: 33.333% 33.333%;
+  background-image:
+    linear-gradient(to right, rgba(229, 185, 92, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 185, 92, 0.2) 1px, transparent 1px);
+}
+
+/* North Rotation Range Slider */
+.north-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.north-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--accent-gold-glow);
+  border: 2px solid #070a0d;
+}
+
+.north-range-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--accent-gold-glow);
+  border: 2px solid #070a0d;
+}
+
+/* Printable Vastu Audit Report */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-vastu-dossier, #printable-vastu-dossier * {
+    visibility: visible;
+  }
+  #printable-vastu-dossier {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20mm;
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+}
+
+/* ==========================================================================
+   THE NAMING OF VASTUSHED (SOUL + BODY = ALIGNMENT INTERACTIVE SECTION)
+   ========================================================================== */
+.naming-equation-pill {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.naming-equation-pill:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.naming-equation-pill.active-arch {
+  background: rgba(56, 189, 248, 0.2) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.5) !important;
+}
+
+.naming-equation-pill.active-vastu {
+  background: rgba(229, 185, 92, 0.2) !important;
+  border-color: var(--accent-gold) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 24px rgba(229, 185, 92, 0.5) !important;
+}
+
+.naming-equation-pill.active-shed {
+  background: rgba(200, 99, 58, 0.2) !important;
+  border-color: var(--accent-copper) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 24px rgba(200, 99, 58, 0.5) !important;
+}
+
+.naming-equation-pill.active-vastushed {
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.25), rgba(229, 185, 92, 0.25)) !important;
+  border-color: #2dd4bf !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 30px rgba(45, 212, 191, 0.6) !important;
+}
+
+.layer-toggle-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.layer-toggle-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.15);
+}
+
+.naming-tab-btn {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.naming-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.naming-tab-btn.active[data-state="vastu"] {
+  background: rgba(229, 185, 92, 0.15) !important;
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 20px rgba(229, 185, 92, 0.35);
+}
+
+.naming-tab-btn.active[data-state="shed"] {
+  background: rgba(200, 99, 58, 0.15) !important;
+  border-color: var(--accent-copper) !important;
+  box-shadow: 0 0 20px rgba(200, 99, 58, 0.35);
+}
+
+.naming-tab-btn.active[data-state="vastushed"] {
+  background: rgba(56, 189, 248, 0.15) !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+}
+
+.naming-stage-viewport {
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #0b1219 0%, #030507 100%);
+  border: 1px solid rgba(229, 185, 92, 0.25);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.naming-layer-overlay {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s ease;
+  pointer-events: none;
+}
+
+/* 7-Stage Architectural Slider Buttons & Track */
+.stage-pill-btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.stage-pill-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.stage-pill-btn.active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 16px var(--accent-gold-glow);
+}
+
+/* Interactive Canvas HUD Overlay */
+.naming-hud-box {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(4, 8, 12, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 185, 92, 0.3);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 20;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+/* Telemetry Gauge Progress Fill */
+.telemetry-progress-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
+}
+
+/* ==========================================================================
+   MISSION PAGE // 9x9 LIVING MATRIX SIMULATOR STYLING
+   ========================================================================== */
+.mission-matrix-canvas-container {
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #0c141d 0%, #04070a 100%);
+  border: 1.5px solid rgba(229, 185, 92, 0.3);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.9), 0 0 30px rgba(229, 185, 92, 0.15);
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.mission-scale-pill {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.mission-scale-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transform: translateY(-2px);
+  border-color: rgba(229, 185, 92, 0.4);
+}
+
+.mission-scale-pill.active {
+  background: rgba(229, 185, 92, 0.2) !important;
+  border-color: var(--accent-gold) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(229, 185, 92, 0.35);
+  transform: translateY(-2px);
+}
+
+.mission-hud-box {
+  background: rgba(7, 12, 17, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 185, 92, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom 9-Level Slider Range Styling */
+.mission-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #c8633a 0%, #e5b95c 50%, #38bdf8 100%);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(229, 185, 92, 0.3);
+}
+
+.mission-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #e5b95c;
+  box-shadow: 0 0 15px #e5b95c;
+  cursor: grab;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mission-range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #e5b95c;
+}
+
+.mission-range-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #e5b95c;
+  box-shadow: 0 0 15px #e5b95c;
+  cursor: grab;
+}
+
+/* Scale 102 Utility */
+.scale-102 {
+  transform: scale(1.02);
+}
+
+.shadow-gold {
+  box-shadow: 0 0 20px rgba(229, 185, 92, 0.4);
+}

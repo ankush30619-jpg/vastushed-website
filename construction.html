@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construction & Turnkey Execution | VASTUSHED</title>
+  <meta name="description" content="VASTUSHED operates as a turnkey builder and contractor delivering residential construction, interior execution, and renovations with strict quality control across Patna and Delhi." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070a0d',
+              surface: '#0d1318',
+              card: '#131c23',
+              gold: '#e5b95c',
+              copper: '#c8633a',
+              sandstone: '#e2d9cc',
+              cyan: '#38bdf8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#070a0d] text-slate-100 selection:bg-[#e5b95c] selection:text-black architectural-grid min-h-screen relative">
+
+  <!-- =========================================================================
+       NAVIGATION BAR (ACTIVE: CONSTRUCTION)
+       ========================================================================= -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-white/10 bg-[#070a0d]/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 brand-logo-frame flex items-center justify-center p-0.5 group-hover:border-[#e5b95c] transition-all">
+          <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Official Logo" class="brand-logo-img rounded-lg group-hover:scale-105 transition-transform" />
+        </div>
+        <div>
+          <span class="text-2xl font-black font-cinzel tracking-wider text-white flex items-center gap-1.5">
+            VASTUSHED
+          </span>
+          <span class="block text-[10px] font-mono tracking-widest text-[#e5b95c] uppercase">Design • Build • Align</span>
+        </div>
+      </a>
+
+      <!-- 7 Dedicated Pages Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-mono tracking-wider uppercase text-slate-300">
+        <a href="index.html" class="nav-link hover:text-[#e5b95c]">Home</a>
+        <a href="about.html" class="nav-link hover:text-[#e5b95c]">About Us</a>
+        <a href="architecture.html" class="nav-link hover:text-[#e5b95c]">Architecture & Interiors</a>
+        <a href="construction.html" class="nav-link active">Construction</a>
+        <a href="vastu.html" class="nav-link hover:text-[#e5b95c]">Vastu Consultancy</a>
+        <a href="mission.html" class="nav-link hover:text-[#e5b95c]">Our Mission</a>
+        <a href="contact.html" class="nav-link hover:text-[#e5b95c]">Contact Us</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contact.html" class="btn-chamfer px-5 py-2.5 bg-gradient-to-r from-[#e5b95c] to-[#c8633a] text-black font-semibold text-xs tracking-wider uppercase hover:opacity-95 transition-opacity flex items-center gap-2">
+          <i data-lucide="compass" class="w-4 h-4 text-black"></i>
+          <span>Consult With Us</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#070a0d]/98 border-b border-white/10 px-6 py-6 space-y-4 text-sm font-mono uppercase">
+      <a href="index.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Home</a>
+      <a href="about.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">About Us</a>
+      <a href="architecture.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Architecture & Interiors</a>
+      <a href="construction.html" class="block text-[#e5b95c] font-bold py-1">Construction</a>
+      <a href="vastu.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Vastu Consultancy</a>
+      <a href="mission.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Our Mission</a>
+      <a href="contact.html" class="block text-slate-300 hover:text-[#e5b95c] py-1">Contact Us</a>
+      <div class="pt-4 border-t border-white/10">
+        <a href="contact.html" class="block w-full text-center py-3 bg-[#e5b95c] text-black font-bold uppercase text-xs">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28 pb-20">
+    <!-- PAGE HERO HEADER -->
+    <section class="py-16 relative border-b border-white/10 bg-gradient-to-b from-[#0c1217] to-[#070a0d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#c8633a]/10 border border-[#c8633a]/30 text-[#c8633a] text-xs font-mono tracking-widest uppercase mb-4">
+          PAGE 04 // CORE SERVICE 02
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black font-cinzel text-white max-w-4xl leading-tight">
+          Construction & <br />
+          <span class="gradient-gold">Turnkey Execution</span>
+        </h1>
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl font-light mt-4 leading-relaxed">
+          VASTUSHED operates as a direct contractor and builder, offering complete execution services. Because we design and build under one roof, projects move forward with fewer conflicts, fewer delays, and better outcomes.
+        </p>
+      </div>
+    </section>
+
+    <!-- THE UNDER-ONE-ROOF ADVANTAGE -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
+          <div class="lg:col-span-7 space-y-4">
+            <h2 class="text-2xl sm:text-4xl font-bold font-tech text-white">
+              No Gaps. No Excuses. Single-Source Accountability.
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+              When architects hand off drawings to disconnected contractors, mistakes are covered up, material substitutions occur, and the client is stuck in the middle resolving finger-pointing. 
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+              At VASTUSHED, our on-site engineers, quantity surveyors, and project managers work side-by-side with our design principals. Every detail is vetted for structural integrity, accurate cost estimation, and reliable handover dates.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-[#c8633a] cad-corner">
+              <span class="text-xs font-mono text-[#c8633a] uppercase tracking-wider block mb-1">Our Execution Strengths</span>
+              <ul class="text-xs font-mono text-slate-300 space-y-2 mt-3">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e5b95c]"></i> Clear milestone-based project planning</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e5b95c]"></i> Multi-tier quality control on-site</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e5b95c]"></i> Reliable, audited timelines and deliverables</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e5b95c]"></i> Direct coordination between design and build teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 CORE CONSTRUCTION DOMAINS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+          <div class="glass-panel p-6 rounded-xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-lg bg-[#c8633a]/10 text-[#c8633a] flex items-center justify-center">
+              <i data-lucide="building" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Residential Construction</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Turnkey villa construction, multi-story duplexes, and institutional residences built with certified steel, tested concrete grades, and seismic shear cores.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1 font-mono pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Geotechnical soil load analysis</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Multi-layer subterranean waterproofing</li>
+            </ul>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-lg bg-[#e5b95c]/10 text-[#e5b95c] flex items-center justify-center">
+              <i data-lucide="hammer" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Interior Execution</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Architectural joinery, custom millwork, concealed electrical raceways, false ceiling acoustic baffles, and luxury Italian sanitary installations.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1 font-mono pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Factory-grade finish tolerances</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Concealed MEP, HVAC & lighting loops</li>
+            </ul>
+          </div>
+
+          <div class="glass-panel p-6 rounded-xl cad-corner space-y-3">
+            <div class="w-12 h-12 rounded-lg bg-[#38bdf8]/10 text-[#38bdf8] flex items-center justify-center">
+              <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-tech text-white">Renovation & Redevelopment</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Transforming legacy residences, banquet halls, and commercial office floors with structural retrofitting, modernized facades, and energetic Vastu corrections.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1 font-mono pt-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Non-destructive structural upgrades</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b95c]"></i> Energy-efficient building envelope</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- REAL ON-GROUND PHOTO JOURNAL -->
+        <div class="mb-20">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <span class="text-xs font-mono text-[#c8633a] uppercase tracking-wider">Real Site Photography</span>
+              <h2 class="text-2xl sm:text-3xl font-bold font-tech text-white">On-Ground Execution Journal</h2>
+            </div>
+            <span class="text-xs font-mono text-slate-400 hidden sm:inline-block">PATNA • DELHI NCR PROJECTS</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="glass-panel rounded-xl overflow-hidden group">
+              <div class="h-52 overflow-hidden relative bg-slate-900">
+                <img 
+                  src="assets/images/site-rebar.jpg" 
+                  alt="Precision Rebar Fabrication on Site - VASTUSHED" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute bottom-2 left-2 bg-black/70 px-2 py-1 rounded text-[10px] font-mono text-[#e5b95c]">
+                  Phase 1: Seismic Steel Core
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-bold text-white font-tech">Precision Rebar Fabrication</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Rigorous rebar spacing inspection, Fe-550D ties, and cover block placement before slab casting.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl overflow-hidden group">
+              <div class="h-52 overflow-hidden relative bg-slate-900">
+                <img 
+                  src="assets/images/site-concrete.jpg" 
+                  alt="Architectural Concrete Casting - VASTUSHED" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute bottom-2 left-2 bg-black/70 px-2 py-1 rounded text-[10px] font-mono text-[#38bdf8]">
+                  Phase 2: Superstructure
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-bold text-white font-tech">Exposed Formwork Pour</h4>
+                <p class="text-[11px] text-slate-400 mt-1">M25/M30 self-compacting concrete execution with supervised curing for flawless structural density.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl overflow-hidden group">
+              <div class="h-52 overflow-hidden relative bg-slate-900">
+                <img 
+                  src="assets/images/site-laser.jpg" 
+                  alt="Quality Control on Site - VASTUSHED" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute bottom-2 left-2 bg-black/70 px-2 py-1 rounded text-[10px] font-mono text-[#c8633a]">
+                  Phase 3: QA & MEP Testing
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-bold text-white font-tech">Laser Leveling & Conduits</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Digital laser level alignment, 10-bar pressure-tested plumbing lines, and acoustic seals.</p>
+              </div>
+            </div>
+
+            <div class="glass-panel rounded-xl overflow-hidden group">
+              <div class="h-52 overflow-hidden relative bg-slate-900">
+                <img 
+                  src="assets/images/site-handover.jpg" 
+                  alt="Finished Architectural Interiors - VASTUSHED" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute bottom-2 left-2 bg-black/70 px-2 py-1 rounded text-[10px] font-mono text-emerald-400">
+                  Phase 4: Turnkey Handover
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-bold text-white font-tech">Bespoke Millwork Handover</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Final architectural fit-out, zero-snag inspection, and Vastu energy audit before client move-in.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-PHASE TURNKEY ROADMAP -->
+        <div class="glass-panel p-8 rounded-2xl cad-corner border border-white/10 mb-20">
+          <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-widest mb-2">Turnkey Framework</div>
+          <h3 class="text-2xl font-bold font-tech text-white mb-6">Our 5-Phase Construction Roadmap</h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="p-4 rounded-lg bg-white/5 border border-white/5">
+              <div class="text-xs font-mono text-[#e5b95c] mb-1">PHASE 01</div>
+              <h4 class="font-bold text-sm text-white font-tech">Sub-structure</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Soil testing, excavation, anti-termite treatment & raft/isolated footings.</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white/5 border border-white/5">
+              <div class="text-xs font-mono text-[#c8633a] mb-1">PHASE 02</div>
+              <h4 class="font-bold text-sm text-white font-tech">Superstructure</h4>
+              <p class="text-[11px] text-slate-400 mt-1">RCC frame casting, post-tensioned slabs, and high-density thermal blockwork.</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white/5 border border-white/5">
+              <div class="text-xs font-mono text-[#38bdf8] mb-1">PHASE 03</div>
+              <h4 class="font-bold text-sm text-white font-tech">MEP & Services</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Concealed piping, HVAC ducting, fire safety, and electrical load balancing.</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white/5 border border-white/5">
+              <div class="text-xs font-mono text-amber-400 mb-1">PHASE 04</div>
+              <h4 class="font-bold text-sm text-white font-tech">Finishes & Joinery</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Italian marble laying, hardwood joinery, architectural glazing & paint.</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white/5 border border-white/5">
+              <div class="text-xs font-mono text-emerald-400 mb-1">PHASE 05</div>
+              <h4 class="font-bold text-sm text-white font-tech">Calibration & Handover</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Vastu energy validation, deep cleaning, snag clearance & snag-free key handover.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             INFOGRAPHIC: MATERIAL QUALITY ASSURANCE & CONCRETE TESTING MATRIX
+             =================================================================== -->
+        <div class="glass-panel p-8 sm:p-10 rounded-2xl cad-corner border border-[#c8633a]/30 mb-24">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/10 pb-6 mb-8">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#c8633a]/10 border border-[#c8633a]/30 text-[#c8633a] text-xs font-mono tracking-widest uppercase mb-2">
+                Engineering Integrity Infographic
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-black font-cinzel text-white">
+                Material QA & Structural Testing Matrix
+              </h2>
+            </div>
+            <p class="text-xs font-mono text-slate-400 max-w-sm">
+              Standard Indian Standards (IS) compliance benchmarks enforced across all VASTUSHED job sites.
+            </p>
+          </div>
+
+          <!-- The QA Testing Matrix Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- QA Item 1 -->
+            <div class="p-5 rounded-xl bg-[#06090c] border border-white/10 space-y-3 matrix-row">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-[#e5b95c] font-bold">REBAR QA</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">PASSED</span>
+              </div>
+              <h4 class="text-base font-bold font-tech text-white">Fe-550D TMT Reinforcement</h4>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-1">
+                <li><strong class="text-slate-400">IS Code:</strong> IS 1786:2008</li>
+                <li><strong class="text-slate-400">Yield Strength:</strong> &ge; 550 N/mm²</li>
+                <li><strong class="text-slate-400">Elongation:</strong> &ge; 14.5% Seismic Grade</li>
+                <li><strong class="text-slate-400">Testing:</strong> Ultrasonic Flaw & Weight/Meter</li>
+              </ul>
+              <div class="text-[11px] font-mono text-[#e5b95c] bg-[#e5b95c]/5 p-2 rounded border border-[#e5b95c]/20">
+                100% Tata Tiscon / Jindal Panther certified.
+              </div>
+            </div>
+
+            <!-- QA Item 2 -->
+            <div class="p-5 rounded-xl bg-[#06090c] border border-white/10 space-y-3 matrix-row">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-[#38bdf8] font-bold">CONCRETE CRUSH</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">PASSED</span>
+              </div>
+              <h4 class="text-base font-bold font-tech text-white">M25/M30 Ready-Mix Cube Test</h4>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-1">
+                <li><strong class="text-slate-400">IS Code:</strong> IS 456 & IS 516</li>
+                <li><strong class="text-slate-400">Slump Range:</strong> 110mm &plusmn; 25mm flow</li>
+                <li><strong class="text-slate-400">7-Day Test:</strong> &ge; 70% characteristic target</li>
+                <li><strong class="text-slate-400">28-Day Test:</strong> &ge; 30 - 38 N/mm² crushing</li>
+              </ul>
+              <div class="text-[11px] font-mono text-[#38bdf8] bg-[#38bdf8]/5 p-2 rounded border border-[#38bdf8]/20">
+                Cube cast every 30m³ pour with lab certs.
+              </div>
+            </div>
+
+            <!-- QA Item 3 -->
+            <div class="p-5 rounded-xl bg-[#06090c] border border-white/10 space-y-3 matrix-row">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-[#c8633a] font-bold">WATERPROOFING</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">PASSED</span>
+              </div>
+              <h4 class="text-base font-bold font-tech text-white">Subterranean & Terrace Shield</h4>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-1">
+                <li><strong class="text-slate-400">IS Code:</strong> IS 3067 & IS 1346</li>
+                <li><strong class="text-slate-400">Barrier 1:</strong> Crystalline penetration slurry</li>
+                <li><strong class="text-slate-400">Barrier 2:</strong> 4mm SBS torch-on membrane</li>
+                <li><strong class="text-slate-400">Ponding Test:</strong> 72-Hour continuous hydro-load</li>
+              </ul>
+              <div class="text-[11px] font-mono text-[#c8633a] bg-[#c8633a]/5 p-2 rounded border border-[#c8633a]/20">
+                10-Year zero-dampness structural warranty.
+              </div>
+            </div>
+
+            <!-- QA Item 4 -->
+            <div class="p-5 rounded-xl bg-[#06090c] border border-white/10 space-y-3 matrix-row">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-purple-400 font-bold">MEP PRESSURE</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">PASSED</span>
+              </div>
+              <h4 class="text-base font-bold font-tech text-white">Megger & Hydrostatic Load</h4>
+              <ul class="text-xs font-mono text-slate-300 space-y-1.5 pt-1">
+                <li><strong class="text-slate-400">IS Code:</strong> IS 732 & IS 1239</li>
+                <li><strong class="text-slate-400">Electrical:</strong> 1000V Megger insulation test</li>
+                <li><strong class="text-slate-400">Plumbing:</strong> 10-Bar hydraulic leak hold</li>
+                <li><strong class="text-slate-400">Earthing:</strong> Copper plate &lt; 1.0 Ohm resistance</li>
+              </ul>
+              <div class="text-[11px] font-mono text-purple-400 bg-purple-400/5 p-2 rounded border border-purple-400/20">
+                Concealed lines audited before wall closing.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             SECTION: 3 CONSTRUCTION PACKAGES
+             =================================================================== -->
+        <div class="mb-24">
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#c8633a]/10 border border-[#c8633a]/30 text-[#c8633a] text-xs font-mono tracking-widest uppercase">
+              Turnkey Contracting Tiers
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black font-cinzel text-white">
+              Construction & Turnkey Packages
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base font-light">
+              Clear scope, certified building materials, transparent milestone schedules, and single-source accountability.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- PACKAGE 1: GRAY SHELL & CORE -->
+            <div class="package-card p-8 rounded-2xl cad-corner flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider font-bold">PACKAGE TIER 01</div>
+                  <h3 class="text-2xl font-bold font-tech text-white">Structural Core & Gray Shell</h3>
+                  <p class="text-xs text-slate-400 leading-relaxed font-light">
+                    For project owners with dedicated finishing teams who require an engineered, seismically certified structural envelope.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div class="text-xs font-mono text-slate-400 uppercase">Structural Scope</div>
+                  <div class="text-xl font-bold font-tech text-white mt-0.5">Plinth to Terrace Shell</div>
+                  <div class="text-[11px] font-mono text-[#38bdf8]">Includes 10-Year Structural Warranty</div>
+                </div>
+
+                <div class="space-y-3">
+                  <span class="text-xs font-mono text-slate-300 uppercase tracking-wider block font-semibold">Scope & Deliverables:</span>
+                  <ul class="text-xs font-mono text-slate-300 space-y-2.5">
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>Soil bearing load tests, excavation & anti-termite grid</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>Fe-550D TMT Rebar (Tata/Jindal) & M25/M30 RMC</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>Seismic shear walls & post-tensioned RCC slab casting</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>High-density thermal AAC or 9-inch wire-cut brick masonry</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5"></i>
+                      <span>Double-coat exterior waterproof sand-faced plaster</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pt-8 mt-8 border-t border-white/10">
+                <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Structural%20Core%20%26%20Gray%20Shell%20Construction%20Package" target="_blank" class="btn-chamfer w-full text-center py-3.5 bg-white/5 hover:bg-white/10 text-white border border-white/20 font-bold font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-[#38bdf8]"></i>
+                  <span>Inquire for Gray Shell</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- PACKAGE 2: PREMIUM TURNKEY BUILD (FEATURED) -->
+            <div class="package-card featured p-8 rounded-2xl cad-corner flex flex-col justify-between relative shadow-2xl">
+              <div class="package-badge">MOST POPULAR // COMPLETE BUILD</div>
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider font-bold">PACKAGE TIER 02</div>
+                  <h3 class="text-2xl font-bold font-tech text-white">Premium Turnkey Build</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed font-light">
+                    The complete end-to-end design & build solution. We handle everything from foundation excavation to move-in key handover.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-[#e5b95c]/10 border border-[#e5b95c]/30">
+                  <div class="text-xs font-mono text-[#e5b95c] uppercase">Contract Scope</div>
+                  <div class="text-xl font-bold font-tech text-white mt-0.5">100% Move-In Ready</div>
+                  <div class="text-[11px] font-mono text-slate-300">Dedicated Site Engineer + Weekly Video Audits</div>
+                </div>
+
+                <div class="space-y-3">
+                  <span class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider block font-semibold">Everything in Gray Shell, plus:</span>
+                  <ul class="text-xs font-mono text-slate-200 space-y-2.5">
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Concealed Finolex/Havells FRLS wiring & Schneider switches</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Astral/Supreme CPVC plumbing with 10-bar pressure test</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Large-format vitrified floor tiles / polished Indian marble</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Premium Jaquar/Kohler CP fittings & wall-hung commodes</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Double-glazed soundproof UPVC windows & teak-finish doors</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#e5b95c] shrink-0 mt-0.5"></i>
+                      <span>Asian Paints Royale interior emulsion & false ceilings</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pt-8 mt-8 border-t border-white/10">
+                <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Premium%20Turnkey%20Build%20Package" target="_blank" class="btn-chamfer w-full text-center py-3.5 bg-gradient-to-r from-[#c8633a] via-[#e5b95c] to-[#f59e0b] text-black font-black font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-black"></i>
+                  <span>Choose Turnkey Build</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- PACKAGE 3: LUXURY MONOLITHIC TURNKEY -->
+            <div class="package-card p-8 rounded-2xl cad-corner flex flex-col justify-between">
+              <div class="space-y-6">
+                <div class="space-y-2">
+                  <div class="text-xs font-mono text-[#c8633a] uppercase tracking-wider font-bold">PACKAGE TIER 03</div>
+                  <h3 class="text-2xl font-bold font-tech text-white">Luxury Monolithic Turnkey</h3>
+                  <p class="text-xs text-slate-400 leading-relaxed font-light">
+                    For flagship luxury residences, boutique resorts, and landmark corporate offices demanding bespoke, museum-grade execution.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div class="text-xs font-mono text-slate-400 uppercase">Execution Caliber</div>
+                  <div class="text-xl font-bold font-tech text-white mt-0.5">Ultra-Bespoke Masterpiece</div>
+                  <div class="text-[11px] font-mono text-[#c8633a]">Imported Materials + Central VRV HVAC</div>
+                </div>
+
+                <div class="space-y-3">
+                  <span class="text-xs font-mono text-slate-300 uppercase tracking-wider block font-semibold">Everything in Premium Turnkey, plus:</span>
+                  <ul class="text-xs font-mono text-slate-300 space-y-2.5">
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Imported Italian Statuario/Bottochino marble & wood floors</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Concealed multi-zone VRV/VRF air conditioning raceways</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Custom fluted timber joinery, brass inlays & acoustic panels</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Grohe / Hansgrohe thermostatic concealed rain showers</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Smart home automation conduits & circadian lighting loops</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-[#c8633a] shrink-0 mt-0.5"></i>
+                      <span>Vastu Energy Alignment & Griha Pravesh validation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pt-8 mt-8 border-t border-white/10">
+                <a href="https://wa.me/919999999999?text=Hi%20VASTUSHED,%20I%20am%20interested%20in%20the%20Luxury%20Monolithic%20Turnkey%20Package" target="_blank" class="btn-chamfer w-full text-center py-3.5 bg-white/5 hover:bg-white/10 text-white border border-white/20 font-bold font-tech text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-[#c8633a]"></i>
+                  <span>Inquire for Luxury Tier</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="contact.html" class="btn-chamfer inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#c8633a] to-[#e5b95c] text-black font-bold font-tech text-sm uppercase tracking-wider">
+            <span>Inquire About Construction Services</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#040608] py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 brand-logo-frame flex items-center justify-center p-0.5">
+              <img src="assets/images/vastushed-logo.jpg" alt="VASTUSHED Logo" class="brand-logo-img rounded-md" />
+            </div>
+            <span class="text-xl font-black font-cinzel tracking-wider text-white">VASTUSHED</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Architecture, Interior Design, Construction, and Vastu Consultancy delivering thoughtful, well-executed, and energetically aligned spaces across North India. 10 years of craft.
+          </p>
+          <div class="text-[11px] font-mono text-[#e5b95c]">DESIGN. BUILD. ALIGN.</div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#e5b95c] uppercase tracking-wider">7 Dedicated Pages</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition-colors">1. Homepage</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">2. About Us</a></li>
+            <li><a href="architecture.html" class="hover:text-white transition-colors">3. Architecture & Interiors</a></li>
+            <li><a href="construction.html" class="text-white font-semibold">4. Construction & Build</a></li>
+            <li><a href="vastu.html" class="hover:text-white transition-colors">5. Vastu Consultancy</a></li>
+            <li><a href="mission.html" class="hover:text-white transition-colors">6. Our Mission</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">7. Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#38bdf8] uppercase tracking-wider">Typologies</div>
+          <ul class="text-xs font-mono space-y-2 text-slate-400">
+            <li>Residential Homes & Villas</li>
+            <li>Commercial & Corporate HQs</li>
+            <li>Hospitality Resorts & Banquets</li>
+            <li>Cafes & Restaurants</li>
+            <li>Urban Design & Plotting</li>
+            <li>Biophilic Landscaping</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-mono text-[#c8633a] uppercase tracking-wider">Coordinates</div>
+          <div class="text-xs font-mono space-y-2 text-slate-400">
+            <div><strong>PATNA HUB:</strong> LAT 25°36'N // LONG 85°08'E</div>
+            <div><strong>DELHI HUB:</strong> LAT 28°36'N // LONG 77°12'E</div>
+            <div class="text-[10px] text-slate-500 pt-2">North India Project Coverage: Bihar, Delhi NCR, UP, Haryana & Regional Belt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+        <div>© 2026 VASTUSHED. All rights reserved. Built with awareness.</div>
+        <div class="flex items-center gap-6">
+          <span>Well Designed. Well Built. Well Aligned.</span>
+          <a href="construction.html" class="text-[#e5b95c] hover:underline flex items-center gap-1">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/ai-mascot.js"></script>
+</body>
+</html>
